@@ -209,4 +209,12 @@ const textContentSchema = {
   },
 };
 
-module.exports = { textContentSchema };
+module.exports = {
+  textContentSchema,
+  questionContentSchema,
+  blockContentSchema,
+  executionContentSchema,
+  loopContentSchema,
+  markContentSchema,
+  quotaContentSchema,
+};
