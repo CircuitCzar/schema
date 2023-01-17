@@ -1,0 +1,71 @@
+{
+  "id": "b45a9891-e037-4997-919c-709dfbaab018",
+  "kind": "TextList",
+  "list": [
+    {
+      "id": "cac366fc-83b3-49de-b9d5-234580d22e53",
+      "data": {
+        "html": "<div style=\"display: inline-block\">"
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    },
+    {
+      "id": "5aeaa9e7-76bb-46e9-856a-8fa4d58391b7",
+      "data": {
+        "html": "<div>"
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    },
+    {
+      "id": "99ffafcb-7e3e-4ece-856b-5a7489c7775a",
+      "data": {
+        "html": "<span>SFSDFSDF</span>"
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    },
+    {
+      "id": "d1bbf3fd-cd63-43f0-884c-e6178609df85",
+      "data": {
+        "html": "</div>"
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    },
+    {
+      "id": "1e9125bf-b258-4d14-864e-4834138cef23",
+      "data": {
+        "html": "</div>"
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    }
+  ],
+  "meta": null,
+  "editor": {
+    "task": "",
+    "comment": ""
+  }
+}

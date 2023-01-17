@@ -5,7 +5,9 @@ const htmlElementSchema = {
   properties: {
     id: { type: 'string', format: 'uuid' },
     kind: { const: 'HtmlItem' },
-    meta: { type: 'null' },
+    meta: {
+      oneOf: [{ type: 'null' }, { type: 'object' }],
+    },
     editor: {
       type: 'object',
       properties: {

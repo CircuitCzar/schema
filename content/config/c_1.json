@@ -1,0 +1,83 @@
+{
+  "id": "f3d2fb2b-474f-49f8-9fe8-fd660e2ae031",
+  "kind": "TextContent",
+  "meta": null,
+  "editor": {
+    "comment": ""
+  },
+  "content": {
+    "lan": "zh-cn",
+    "list": {
+      "id": "6a6f52c0-86a8-4109-b80d-b49889e45c56",
+      "kind": "TextList",
+      "list": [
+        {
+          "id": "2cd147c0-44a5-4beb-afca-ad05c111c650",
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "comment": "",
+            "task": ""
+          },
+          "data": {
+            "html": "<div style=\"display: inline-block\">"
+          }
+        },
+        {
+          "id": "24d525d0-9fbd-440d-8340-d61e4329d594",
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "comment": "",
+            "task": ""
+          },
+          "data": {
+            "html": "<div>"
+          }
+        },
+        {
+          "id": "6ad75b99-0f43-4b76-8fb8-609b48d6c954",
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "comment": "",
+            "task": ""
+          },
+          "data": {
+            "html": "<span>fdzfdfzDFDSdfsdf</span>"
+          }
+        },
+        {
+          "id": "a33a50c0-ae59-49a4-82cc-87f02dd1f319",
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "comment": "",
+            "task": ""
+          },
+          "data": {
+            "html": "</div>"
+          }
+        },
+        {
+          "id": "83a7ee23-4b36-41da-ba9d-eb97c2d4dcf6",
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "comment": "",
+            "task": ""
+          },
+          "data": {
+            "html": "</div>"
+          }
+        }
+      ],
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    },
+    "type": "String"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ca73d3aa-0564-4ea5-bf6d-28677be49617",
+  "kind": "TextContent",
+  "meta": null,
+  "editor": {
+    "comment": ""
+  },
+  "content": {
+    "lan": "en-us",
+    "list": {
+      "id": "670ba3ba-221f-4a1b-93ef-143524f61fdc",
+      "kind": "TextList",
+      "list": [
+        {
+          "id": "7cfde940-a91b-47e6-95bd-f160dcf692fd",
+          "data": {
+            "html": ""
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      ],
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    },
+    "type": "String"
+  }
+}

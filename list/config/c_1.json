@@ -1,0 +1,23 @@
+{
+  "id": "953c2919-740f-4632-b093-d059570d3232",
+  "kind": "TextList",
+  "list": [
+    {
+      "id": "b9accf4b-9f4d-4811-bcd8-9741e6da5017",
+      "data": {
+        "html": ""
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    }
+  ],
+  "meta": null,
+  "editor": {
+    "task": "",
+    "comment": ""
+  }
+}

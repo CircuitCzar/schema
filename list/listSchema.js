@@ -1,3 +1,6 @@
+const htmlElementSchema = require('../element/elementSchema').htmlElementSchema;
+const optionItemSchema = require('../item/itemSchema').optionItemSchema;
+
 // option list
 const optionListSchema = {
   $schema: 'http://json-schema.org/draft-07/schema#',
@@ -9,7 +12,12 @@ const optionListSchema = {
       type: 'object',
       properties: {
         name: { type: 'string' },
-        link: { type: 'null' },
+        link: {
+          oneOf: [
+            { type: 'null' },
+            { type: 'object', properties: { key: { type: 'string' } } },
+          ],
+        },
       },
     },
     editor: {
@@ -17,10 +25,10 @@ const optionListSchema = {
       properties: {
         comment: { type: 'string' },
         task: { type: 'string' },
-        instruction: { type: 'object' },
+        instruction: htmlElementSchema,
       },
     },
-    list: { type: 'array' },
+    list: { type: 'array', item: optionItemSchema },
   },
 };
 
@@ -31,7 +39,9 @@ const textListSchema = {
   properties: {
     id: { type: 'string', format: 'uuid' },
     kind: { const: 'TextList' },
-    meta: { type: 'null' },
+    meta: {
+      oneOf: [{ type: 'null' }, { type: 'object' }],
+    },
     editor: {
       type: 'object',
       properties: {
@@ -39,6 +49,8 @@ const textListSchema = {
         task: { type: 'string' },
       },
     },
-    list: { type: 'array' },
+    list: { type: 'array', item: htmlElementSchema },
   },
 };
+
+module.exports = { optionListSchema, textListSchema };

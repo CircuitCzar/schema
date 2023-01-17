@@ -1,0 +1,144 @@
+{
+  "id": "ef6d4263-2c3c-4352-b6c7-7a0712490716",
+  "kind": "OptionItem",
+  "data": {
+    "code": "0",
+    "text": {
+      "EN-US": {
+        "id": "d6f4b1be-7aac-4da2-a9a8-72f0ffc64878",
+        "kind": "TextContent",
+        "meta": null,
+        "editor": {
+          "comment": ""
+        },
+        "content": {
+          "lan": "EN-US",
+          "list": {
+            "id": "382756d9-a12f-4f4c-a7bd-8632a9a873e8",
+            "kind": "TextList",
+            "list": [
+              {
+                "id": "e13d8186-045c-455d-afe6-756b5779c4d5",
+                "data": {
+                  "html": ""
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              }
+            ],
+            "meta": null,
+            "editor": {
+              "task": "",
+              "comment": ""
+            }
+          },
+          "type": "String"
+        }
+      },
+      "ZH-CN": {
+        "id": "4776ef5a-9eaf-44f2-bc36-7fcba1b8737a",
+        "kind": "TextContent",
+        "meta": null,
+        "editor": {
+          "comment": ""
+        },
+        "content": {
+          "lan": "ZH-CN",
+          "list": {
+            "id": "d85f1d35-8a74-499d-9c15-ebc9d3ec293d",
+            "kind": "TextList",
+            "list": [
+              {
+                "id": "fb5f1fce-73f1-447f-a3d2-c7c2f34f3a32",
+                "data": {
+                  "html": "<div style=\"display: inline-block\">"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "fb5ea68a-793e-4e3c-98a5-99840358de27",
+                "data": {
+                  "html": "<div>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "1db01dd7-0b67-4dc9-8030-c21571c6b04b",
+                "data": {
+                  "html": "<b><span>abcdef</span></b>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "6ea07f1d-3ff6-4417-a024-4db8cec08e7e",
+                "data": {
+                  "html": "</div>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "d8087900-655d-452d-a42d-46da813ec29e",
+                "data": {
+                  "html": "</div>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              }
+            ],
+            "meta": null,
+            "editor": {
+              "task": "",
+              "comment": ""
+            }
+          },
+          "type": "String"
+        }
+      }
+    }
+  },
+  "meta": null,
+  "editor": {
+    "task": "",
+    "comment": "",
+    "instruction": {
+      "id": "e210426c-9977-40c8-b4eb-4a3cd6aac73b",
+      "data": {
+        "html": ""
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    }
+  }
+}

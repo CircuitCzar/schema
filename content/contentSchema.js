@@ -1,3 +1,5 @@
+const textListSchema = require('../list/listSchema').textListSchema;
+
 // question content
 const questionContentSchema = {
   $schema: 'http://json-schema.org/draft-07/schema#',
@@ -187,23 +189,24 @@ const textContentSchema = {
   properties: {
     id: { type: 'string', format: 'uuid' },
     kind: { const: 'TextContent' },
-    meta: { type: 'null' },
+    meta: {
+      oneOf: [{ type: 'null' }, { type: 'object' }],
+    },
     editor: {
       type: 'object',
       properties: {
         comment: { type: 'string' },
       },
     },
-    list: {
-      type: 'array',
-    },
     content: {
       type: 'object',
       properties: {
         type: { const: 'String' },
         lan: { type: 'string' },
-        list: { type: 'array' },
+        list: { type: 'object', item: textListSchema },
       },
     },
   },
 };
+
+module.exports = { textContentSchema };
