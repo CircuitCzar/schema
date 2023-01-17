@@ -11,20 +11,15 @@ const htmlElementSchema = {
       properties: {
         comment: { type: 'string' },
         task: { type: 'string' },
-        data: {
-          type: 'object',
-          properties: {
-            html: { type: 'string' },
-          },
-        },
       },
     },
-    content: {
+    data: {
       type: 'object',
       properties: {
-        type: { const: 'Execution' },
-        executions: { type: 'array' },
+        html: { type: 'string' },
       },
     },
   },
 };
+
+module.exports = { htmlElementSchema };
