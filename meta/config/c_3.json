@@ -1,0 +1,618 @@
+{
+  "11a7fe6a-0cea-4573-9659-aacc634152ab": {
+    "data": {
+      "id": "11a7fe6a-0cea-4573-9659-aacc634152ab",
+      "data": {
+        "function": "/**\n * check target question is answered in the data collection or not\n * @param {string} question target question\n * @param {'single'|'multi'|'openEnd'} type target question type\n */\nfunction checkAnsweredWithoutLoop(question, type) {\n    // get answers in the data collection\n    const answers = this.S.getData(question);\n    if (!answers) return false;\n    // get all option codes in the question and remove additional open-end\n    const optionCode = Object.keys(answers).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // check if the question is answered or not\n    switch (type) {\n        case 'single':\n            {\n                optionCode.forEach((code) => {\n                    // single question is not answered\n                    if (answers[code] === null) {\n                        flag = false;\n                    }\n                });\n            }\n        case 'multi':\n            {\n                // set default result to false\n                flag = false;\n                optionCode.forEach((code) => {\n                    // multi question is not answered\n                    if (answers[code] !== 0) {\n                        flag = true;\n                    }\n                });\n            }\n        case 'openEnd':\n            {\n                // set default result to false\n                flag = false;\n                optionCode.forEach((code) => {\n                    // multi question is not answered\n                    if (answers[code] !== null) {\n                        flag = true;\n                    }\n                });\n            }\n    }\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "question",
+            "type": "string",
+            "instruction": "target question"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "instruction": "target question type"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "If the condition is satisfied, the function will return true, otherwise, false."
+        },
+        "information": "check target question is answered in the data collection or not",
+        "link": "0.0.3"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "checkAnsweredWithoutLoop"
+      },
+      "editor": null
+    },
+    "name": "checkAnsweredWithoutLoop"
+  },
+  "1e672ed4-8462-438b-92ab-612de2e71703": {
+    "data": {
+      "id": "1e672ed4-8462-438b-92ab-612de2e71703",
+      "data": {
+        "function": "/**\n * check answers in the data collection contains the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @param {Array<string>} loopItems loopItems\n * @returns true/false\n */\nfunction findAnswersContainsWithLoop(setQuestion, setAnswer, loopItems) {\n    // get answers in the data collection with loopItems\n    const getAnswer = this.S.getData(`${setQuestion}_${loopItems.join('_')}`);\n    if (!getAnswer) return false;\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // set return flag\n    var flag = true;\n    // all set answers should be same as the answer in the data collection\n    setKeys\n        .filter((key) => {\n            if (setAnswer[key] == '1') return key;\n        })\n        .forEach((key) => {\n            if (setAnswer[key] !== getAnswer[key]) {\n                flag = false;\n            }\n        });\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "setQuestion",
+            "type": "string",
+            "instruction": "targe question"
+          },
+          {
+            "name": "setAnswer",
+            "type": "object",
+            "instruction": "set answers"
+          },
+          {
+            "name": "loopItems",
+            "type": "object",
+            "instruction": "loopItems"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+        },
+        "information": "check answers in the data collection contains the set answers",
+        "link": "0.0.4"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "findAnswersContainsWithLoop"
+      },
+      "editor": null
+    },
+    "name": "findAnswersContainsWithLoop"
+  },
+  "2277a9e2-8331-4dfb-847e-700c2c6b4405": {
+    "data": {
+      "id": "2277a9e2-8331-4dfb-847e-700c2c6b4405",
+      "data": {
+        "function": "/**\n * check answers in the data collection contains the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @returns true/false\n */\nfunction findAnswersContainsWithoutLoop(setQuestion, setAnswer) {\n    // get answers in the data collection\n    const getAnswer = this.S.getData(setQuestion);\n    if (!getAnswer) return false;\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // set return flag\n    var flag = true;\n\n    // all set answers should be same as the answer in the data collection\n    setKeys\n        .filter((key) => {\n            if (setAnswer[key] == '1') return key;\n        })\n        .forEach((key) => {\n            if (setAnswer[key] !== getAnswer[key]) {\n                flag = false;\n            }\n        });\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "setQuestion",
+            "type": "string",
+            "instruction": "targe question"
+          },
+          {
+            "name": "setAnswer",
+            "type": "object",
+            "instruction": "set answers"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+        },
+        "information": "check answers in the data collection contains the set answers",
+        "link": "0.0.3"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "findAnswersContainsWithoutLoop"
+      },
+      "editor": null
+    },
+    "name": "findAnswersContainsWithoutLoop"
+  },
+  "323fc9a0-dbc1-49fc-9fe1-1253df2da6d7": {
+    "data": {
+      "id": "323fc9a0-dbc1-49fc-9fe1-1253df2da6d7",
+      "data": {
+        "function": "function randomize(options) {\n    var index = -1,\n        size = options.length,\n        lastIndex = size - 1;\n    while (++index < size) {\n        var rand = index + Math.floor(Math.random() * (lastIndex - index + 1));\n        var value = options[rand];\n        options[rand] = options[index];\n        options[index] = value;\n    }\n    options.length = size;\n    return options;\n}\n",
+        "arguments": [
+          {
+            "name": "options",
+            "type": "customized object",
+            "instruction": "the codes of options need to be randomized "
+          }
+        ],
+        "return": {
+          "type": "customized object",
+          "instruction": "new array after being randomized"
+        },
+        "information": "",
+        "link": "0.0.3"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "randomize"
+      },
+      "editor": null
+    },
+    "name": "randomize"
+  },
+  "3547177b-f501-4df1-89a4-437b8e776375": {
+    "data": {
+      "id": "3547177b-f501-4df1-89a4-437b8e776375",
+      "data": {
+        "function": "/**\n * check target open-end question is answered with specific options or not\n * @param {string} question target question\n * @param {Array<string>} options options supposed to be answered\n */\nfunction checkOpenEndAnsweredWithoutLoop(question, options) {\n    // get answers in the data collection\n    const answers = this.S.getData(question);\n    if (!answers) return false;\n    // set return flag\n    var flag = true;\n    // check if the question is answered or not\n    options.forEach((code) => {\n        // option is not answered\n        if (!answers[code]) {\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "question",
+            "type": "string",
+            "instruction": "target question"
+          },
+          {
+            "name": "options",
+            "type": "array",
+            "instruction": "options supposed to be answered"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "If the condition is satisfied, the function will return true, otherwise, false."
+        },
+        "information": "check target open-end question is answered with specific options or not",
+        "link": "0.0.6"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "checkOpenEndAnsweredWithoutLoop"
+      },
+      "editor": null
+    },
+    "name": "checkOpenEndAnsweredWithoutLoop"
+  },
+  "3ae09f7f-ad6b-4ef0-8f8e-663a1f7d61da": {
+    "data": {
+      "id": "3ae09f7f-ad6b-4ef0-8f8e-663a1f7d61da",
+      "data": {
+        "function": "/**\n * check answers in the data collection doesn't contain the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @param {Array<string>} loopItems loopItems\n * @returns true/false\n */\nfunction findAnswersDoesNotContainsWithLoop(setQuestion, setAnswer, loopItems) {\n    // get answers in the data collection with loopItems\n    const getAnswer = this.S.getData(`${setQuestion}_${loopItems.join('_')}`);\n    if (!getAnswer) return false;\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // set return flag\n    var flag = true;\n\n    // all set answers should not be in the data collection answers\n    setKeys\n        .filter((key) => {\n            if (setAnswer[key] == '0') return key;\n        })\n        .forEach((key) => {\n            if (setAnswer[key] !== getAnswer[key]) {\n                flag = false;\n            }\n        });\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "setQuestion",
+            "type": "string",
+            "instruction": "targe question"
+          },
+          {
+            "name": "setAnswer",
+            "type": "object",
+            "instruction": "set answers"
+          },
+          {
+            "name": "loopItems",
+            "type": "object",
+            "instruction": "loopItems"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+        },
+        "information": "check answers in the data collection doesn't contain the set answers",
+        "link": "0.0.4"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "findAnswersDoesNotContainsWithLoop"
+      },
+      "editor": null
+    },
+    "name": "findAnswersDoesNotContainsWithLoop"
+  },
+  "420acd88-917f-4854-a71f-0a6818e511a1": {
+    "data": {
+      "id": "420acd88-917f-4854-a71f-0a6818e511a1",
+      "data": {
+        "function": "/**\n * check answers in the data collection is not same as the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @param {Array<string>} loopItems loopItems\n * @returns true/false\n */\nfunction findAnswersIsNotWithLoop(setQuestion, setAnswer, loopItems) {\n    // get answers in the data collection with loopItems\n    const getAnswer = this.S.getData(`${setQuestion}_${loopItems.join('_')}`);\n    if (!getAnswer) return false;\n\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // get all option codes in the question and remove additional open-end\n    const getKeys = Object.keys(getAnswer).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // lengths should be same\n    if (setKeys.length !== getKeys.length) return false;\n    // all answers should be exactly not same\n    setKeys.forEach((key) => {\n        if (setAnswer[key] !== getAnswer[key]) {\n            // one of the answer is same then set flag to false\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "setQuestion",
+            "type": "string",
+            "instruction": "targe question"
+          },
+          {
+            "name": "setAnswer",
+            "type": "object",
+            "instruction": "set answers"
+          },
+          {
+            "name": "loopItems",
+            "type": "object",
+            "instruction": "loopItems"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+        },
+        "information": "check answers in the data collection is not same as the set answers",
+        "link": "0.0.3"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "findAnswersIsNotWithLoop"
+      },
+      "editor": null
+    },
+    "name": "findAnswersIsNotWithLoop"
+  },
+  "4b9dda63-c0a9-49ff-915b-cf367d360802": {
+    "data": {
+      "id": "4b9dda63-c0a9-49ff-915b-cf367d360802",
+      "data": {
+        "function": "/**\n * check answers in the data collection is same as the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @returns true/false\n */\nfunction findAnswersIsWithoutLoop(setQuestion, setAnswer) {\n    // get answers in the data collection\n    const getAnswer = this.S.getData(setQuestion);\n    if (!getAnswer) return false;\n\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // get all option codes in the question and remove additional open-end\n    const getKeys = Object.keys(getAnswer).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // lengths should be same\n    if (setKeys.length !== getKeys.length) return false;\n    // all answers should be exactly same\n    setKeys.forEach((key) => {\n        if (setAnswer[key] !== getAnswer[key]) {\n            // one of the answer is not same then set flag to false\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "setQuestion",
+            "type": "string",
+            "instruction": "targe question"
+          },
+          {
+            "name": "setAnswer",
+            "type": "object",
+            "instruction": "set answers"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+        },
+        "information": "check answers in the data collection is same as the set answers",
+        "link": "0.0.2"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "findAnswersIsWithoutLoop"
+      },
+      "editor": null
+    },
+    "name": "findAnswersIsWithoutLoop"
+  },
+  "55465c69-02d4-42a1-9c68-801d891be2c3": {
+    "data": {
+      "id": "55465c69-02d4-42a1-9c68-801d891be2c3",
+      "data": {
+        "function": "/**\n * check target question is answered in the data collection or not with loop\n * @param {string} question target question\n * @param {'single'|'multi'|'openEnd'} type target question type\n * @param {Array<string>} loopItems loopItems\n */\nfunction checkAnsweredWithLoop(question, type, loopItems) {\n    // get answers in the data collection with loop\n    const answers = this.S.getData(`${question}_${loopItems.join('_')}`);\n    if (!answers) return false;\n    // get all option codes in the question and remove additional open-end\n    const optionCode = Object.keys(answers).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // check if the question is answered or not\n    switch (type) {\n        case 'single':\n            {\n                optionCode.forEach((code) => {\n                    // single question is not answered\n                    if (answers[code] === null) {\n                        flag = false;\n                    }\n                });\n            }\n        case 'multi':\n            {\n                // set default result to false\n                flag = false;\n                optionCode.forEach((code) => {\n                    // multi question is not answered\n                    if (answers[code] !== 0) {\n                        flag = true;\n                    }\n                });\n            }\n        case 'openEnd':\n            {\n                // set default result to false\n                flag = false;\n                optionCode.forEach((code) => {\n                    // multi question is not answered\n                    if (answers[code] !== null) {\n                        flag = true;\n                    }\n                });\n            }\n    }\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "question",
+            "type": "string",
+            "instruction": "target question"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "instruction": "target question type"
+          },
+          {
+            "name": "loopItems",
+            "type": "object",
+            "instruction": "loopItems"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "If the condition is satisfied, the function will return true, otherwise, false."
+        },
+        "information": "check target question is answered in the data collection or not with loop",
+        "link": "0.0.3"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "checkAnsweredWithLoop"
+      },
+      "editor": null
+    },
+    "name": "checkAnsweredWithLoop"
+  },
+  "5e6ebeb5-832a-4397-b47c-a5f3b9cad48d": {
+    "data": {
+      "id": "5e6ebeb5-832a-4397-b47c-a5f3b9cad48d",
+      "data": {
+        "function": "function fetchOpenEnd(questionCode, optionCode) {\n    const getAnswer = this.S.getData(questionCode);\n    const keys = Object.keys(getAnswer);\n    let key = questionCode;\n    if (optionCode) key = `${questionCode}#${optionCode}`;\n    return keys.indexOf(key) !== -1 ? getAnswer[key] : '';\n}",
+        "arguments": [
+          {
+            "name": "questionCode",
+            "type": "string",
+            "instruction": "The code of the target question"
+          },
+          {
+            "name": "optionCode",
+            "type": "string",
+            "instruction": "The code of the target option(multi-option only)"
+          }
+        ],
+        "return": {
+          "type": "string",
+          "instruction": "return the answer of the question or option"
+        },
+        "information": "",
+        "link": "0.0.1"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "fetchOpenEnd"
+      },
+      "editor": null
+    },
+    "name": "fetchOpenEnd"
+  },
+  "5fb3b099-7db5-4ebf-9b93-152ab7409da6": {
+    "data": {
+      "id": "5fb3b099-7db5-4ebf-9b93-152ab7409da6",
+      "data": {
+        "function": "function scriptLogic(script_id, args, return_type, operator, result) {\n    if (typeof (result) === \"string\" && return_type !== \"string\") {\n        switch (return_type) {\n            case \"boolean\":\n                if (result === \"true\") {\n                    result = true\n                }\n                else if (result === \"false\") {\n                    result = false;\n                }\n                else {\n                    throw new Error(`Cannot convert \"${result}\" to a Boolean`);\n                }\n                break;\n            case \"number\":\n                result = Number(result);\n                break;\n            default:\n                throw new Error(`Invalid return_type: ${return_type}`);\n        }\n    }\n    const getResult = this.S.execScriptItem(script_id, args);\n    switch (operator) {\n        // Allows two booleans or strings to compare size\n        case \">\":\n            return getResult > result;\n        // Allows two booleans or strings to compare size\n        case \"<\":\n            return getResult < result;\n        case \"=\": case \"is\":\n            return getResult === result;\n        case \"is not\":\n            return getResult !== result;\n        default:\n            throw new Error(`Unsupported operator: \"${operator}\"`)\n    }\n}\n",
+        "arguments": [
+          {
+            "name": "script_id",
+            "type": "string",
+            "instruction": "The script item id"
+          },
+          {
+            "name": "args",
+            "type": "customized object",
+            "instruction": "The args of the script"
+          },
+          {
+            "name": "return_type",
+            "type": "string",
+            "instruction": "The return type of chosen script('string'/'number'/'boolean')"
+          },
+          {
+            "name": "operator",
+            "type": "string",
+            "instruction": "The operator of current logic, 'is'/'is not' in string return type, '>', '=', '<' in boolean return type, 'is' in boolean type"
+          },
+          {
+            "name": "result",
+            "type": "string",
+            "instruction": "The supposed result in this logic input by user"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "the execution result of this script. true means the logic is satisfied otherwise false"
+        },
+        "information": "",
+        "link": "0.0.3"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "scriptLogic"
+      },
+      "editor": null
+    },
+    "name": "scriptLogic"
+  },
+  "906057b0-b41c-449d-84b1-e2a542071842": {
+    "data": {
+      "id": "906057b0-b41c-449d-84b1-e2a542071842",
+      "data": {
+        "function": "function fetchOpenEnd(questionCode, openEndCode) {\n    const getAnswer = this.S.getData(questionCode);\n    const keys = Object.keys(getAnswer);\n    let key = questionCode;\n    if (optionCode) key = `${questionCode}@${openEndCode}`;\n    return keys.indexOf(key) !== -1 ? getAnswer[key] : '';\n}",
+        "arguments": [
+          {
+            "name": "questionCode",
+            "type": "string",
+            "instruction": "The code of the target question"
+          },
+          {
+            "name": "openEndCode",
+            "type": "string",
+            "instruction": "The code of the target open-end option"
+          }
+        ],
+        "return": {
+          "type": "string",
+          "instruction": "return the answer of the open-end option of a question node"
+        },
+        "information": "",
+        "link": "0.0.1"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "fetchOpenEndInOptions"
+      },
+      "editor": null
+    },
+    "name": "fetchOpenEndInOptions"
+  },
+  "9861fd9c-1a72-4d3b-b5ed-314f44c7b9b5": {
+    "data": {
+      "id": "9861fd9c-1a72-4d3b-b5ed-314f44c7b9b5",
+      "data": {
+        "function": "/**\n * check answers in the data collection doesn't contain the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @returns true/false\n */\nfunction findAnswersDoesNotContainsWithoutLoop(setQuestion, setAnswer) {\n    // get answers in the data collection\n    const getAnswer = this.S.getData(setQuestion);\n    if (!getAnswer) return false;\n\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // set return flag\n    var flag = true;\n\n    // all set answers should not be in the data collection answers\n    setKeys\n        .filter((key) => {\n            if (setAnswer[key] == '0') return key;\n        })\n        .forEach((key) => {\n            if (setAnswer[key] !== getAnswer[key]) {\n                flag = false;\n            }\n        });\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "setQuestion",
+            "type": "string",
+            "instruction": "targe question"
+          },
+          {
+            "name": "setAnswer",
+            "type": "object",
+            "instruction": "set answers"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+        },
+        "information": "check answers in the data collection doesn't contain the set answers",
+        "link": "0.0.3"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "findAnswersDoesNotContainsWithoutLoop"
+      },
+      "editor": null
+    },
+    "name": "findAnswersDoesNotContainsWithoutLoop"
+  },
+  "9db8a315-f1a8-4e18-a740-169cd03ef642": {
+    "data": {
+      "id": "9db8a315-f1a8-4e18-a740-169cd03ef642",
+      "data": {
+        "function": "/**\n * check answers in the data collection is not same as the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @returns true/false\n */\nfunction findAnswersIsNotWithoutLoop(setQuestion, setAnswer) {\n    // get answers in the data collection\n    const getAnswer = this.S.getData(setQuestion);\n    if (!getAnswer) return false;\n\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // get all option codes in the question and remove additional open-end\n    const getKeys = Object.keys(getAnswer).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // lengths should be same\n    if (setKeys.length !== getKeys.length) return false;\n    // all answers should be exactly not same\n    setKeys.forEach((key) => {\n        if (setAnswer[key] === getAnswer[key]) {\n            // one of the answer is same same then set flag to false\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "setQuestion",
+            "type": "string",
+            "instruction": "targe question"
+          },
+          {
+            "name": "setAnswer",
+            "type": "object",
+            "instruction": "set answers"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+        },
+        "information": "check answers in the data collection is not same as the set answers",
+        "link": "0.0.2"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "findAnswersIsNotWithoutLoop"
+      },
+      "editor": null
+    },
+    "name": "findAnswersIsNotWithoutLoop"
+  },
+  "daa1e9e7-7f18-47aa-a928-e9d6dcb19df0": {
+    "data": {
+      "id": "daa1e9e7-7f18-47aa-a928-e9d6dcb19df0",
+      "data": {
+        "function": "/**\n * Get the current loopItem runs in a specific LoopNode\n * @param {string} loopNodeCode The code of the LoopNode which contains the target LoopItems\n */\nfunction fetchLoopItem(loopNodeCode) {\n    // return the current loopItem in the server of the specific LoopNode\n    return this.S.getCurrentLoopItemText(loopNodeCode);\n}",
+        "arguments": [
+          {
+            "name": "loopNodeCode",
+            "type": "string",
+            "instruction": "The code of the LoopNode which contains the target LoopItems"
+          }
+        ],
+        "return": {
+          "type": "string",
+          "instruction": "The current loopItem runs in the LoopNode"
+        },
+        "information": "Get the current loopItem runs in a specific LoopNode",
+        "link": "0.0.1"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "fetchLoopItem"
+      },
+      "editor": null
+    },
+    "name": "fetchLoopItem"
+  },
+  "e4ca5777-25e8-4ee1-8a75-5c2ecdf8ed84": {
+    "data": {
+      "id": "e4ca5777-25e8-4ee1-8a75-5c2ecdf8ed84",
+      "data": {
+        "function": "/**\n * check target open-end question is answered with specific options or not with loopItem\n * @param {string} question target question\n * @param {Array<string>} options options supposed to be answered\n */\nfunction checkOpenEndAnsweredWithLoop(question, options, loopItems) {\n    // get answers in the data collection with loopItems\n    const answers = this.S.getData(`${question}_${loopItems.join('_')}`);\n    if (!answers) return false;\n    // set return flag\n    var flag = true;\n    // check if the question is answered or not\n    options.forEach((code) => {\n        // option is not answered\n        if (!answers[code]) {\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "question",
+            "type": "string",
+            "instruction": "target question"
+          },
+          {
+            "name": "options",
+            "type": "array",
+            "instruction": "options supposed to be answered"
+          },
+          {
+            "name": "loopItems",
+            "type": "object",
+            "instruction": "loopItems"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "If the condition is satisfied, the function will return true, otherwise, false."
+        },
+        "information": "check target open-end question is answered with specific options or not with loopItem",
+        "link": "0.0.6"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "checkOpenEndAnsweredWithLoop"
+      },
+      "editor": null
+    },
+    "name": "checkOpenEndAnsweredWithLoop"
+  },
+  "e6a1a60c-6ac6-4337-ba4c-1001b85eefbf": {
+    "data": {
+      "id": "e6a1a60c-6ac6-4337-ba4c-1001b85eefbf",
+      "data": {
+        "function": "/**\n * check answers in the data collection is same as the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @param {Array<string>} loopItems loopItems\n * @returns true/false\n */\nfunction findAnswersIsWithLoop(setQuestion, setAnswer, loopItems) {\n    // get answers in the data collection with loopItems\n    const getAnswer = this.S.getData(`${setQuestion}_${loopItems.join('_')}`);\n    if (!getAnswer) return false;\n\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // get all option codes in the question and remove additional open-end\n    const getKeys = Object.keys(getAnswer).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // lengths should be same\n    if (setKeys.length !== getKeys.length) return false;\n    // all answers should be exactly same\n    setKeys.forEach((key) => {\n        if (setAnswer[key] !== getAnswer[key]) {\n            // one of the answer is not same then set flag to false\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+        "arguments": [
+          {
+            "name": "setQuestion",
+            "type": "string",
+            "instruction": "targe question"
+          },
+          {
+            "name": "setAnswer",
+            "type": "object",
+            "instruction": "set answers"
+          },
+          {
+            "name": "loopItems",
+            "type": "object",
+            "instruction": "loopItems"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+        },
+        "information": "check answers in the data collection is same as the set answers",
+        "link": "0.0.3"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "findAnswersIsWithLoop"
+      },
+      "editor": null
+    },
+    "name": "findAnswersIsWithLoop"
+  },
+  "e98b2d4f-c061-4cd3-aa37-4f10bc448926": {
+    "data": {
+      "id": "e98b2d4f-c061-4cd3-aa37-4f10bc448926",
+      "data": {
+        "function": "function findAnswerInQuestion(setQuestion, setAnswer, operator) {\n    const getAnswer = this.S.getData(setQuestion);\n    if (!getAnswer) return false;\n    const setKeys = Object.keys(setAnswer);\n    const getKeys = Object.keys(getAnswer);\n    var flag = true;\n    switch (operator) {\n        case 'is':\n            {\n                if (setKeys.length !== getKeys.length) return false;\n                setKeys.forEach((key) => {\n                    if (setAnswer[key] !== getAnswer[key]) {\n                        flag = false;\n                    }\n                });\n                return flag;\n            }\n        case 'is not':\n            {\n                if (setKeys.length !== getKeys.length) return false;\n                setKeys.forEach((key) => {\n                    if (setAnswer[key] === getAnswer[key]) {\n                        flag = false;\n                    }\n                });\n                return flag;\n            }\n        case 'contains':\n            {\n                if (setKeys.length >= getKeys.length) return false;\n                setKeys.forEach((key) => {\n                    if (setAnswer[key] !== getAnswer[key]) {\n                        flag = false;\n                    }\n                });\n                return flag;\n            }\n        case \"doesn't contain\":\n            {\n                if (setKeys.length >= getKeys.length) return false;\n                setKeys.forEach((key) => {\n                    if (setAnswer[key] === getAnswer[key]) {\n                        flag = false;\n                    }\n                });\n                return flag;\n            }\n    }\n}",
+        "arguments": [
+          {
+            "name": "setQuestion",
+            "type": "string",
+            "instruction": "targe question"
+          },
+          {
+            "name": "setAnswer",
+            "type": "object",
+            "instruction": "expected answers"
+          },
+          {
+            "name": "operator",
+            "type": "string",
+            "instruction": "the relation between actual answers and expected answers"
+          }
+        ],
+        "return": {
+          "type": "boolean",
+          "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+        },
+        "information": "",
+        "link": "0.0.4"
+      },
+      "kind": "BuiltinScriptItem",
+      "meta": {
+        "name": "findAnswerInQuestion"
+      },
+      "editor": null
+    },
+    "name": "findAnswerInQuestion"
+  }
+}
