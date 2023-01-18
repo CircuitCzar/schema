@@ -1,0 +1,67 @@
+{
+  "id": "a3921517-065c-4d48-b890-661d5a599bb8",
+  "kind": "LoopNode",
+  "meta": {
+    "node_label": ""
+  },
+  "editor": {
+    "task": "",
+    "comment": "",
+    "instruction": {
+      "id": "4e23614d-8e51-4a21-8ef6-12c1d58e31d0",
+      "data": {
+        "html": ""
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    }
+  },
+  "structure": {
+    "code": "DDD",
+    "content": {
+      "id": "a187b485-a477-43bb-9e35-986085eca921",
+      "kind": "LoopContent",
+      "meta": null,
+      "editor": null,
+      "content": {
+        "list": [],
+        "type": "Loop",
+        "logics": [],
+        "options": {
+          "id": "f6e62d63-ccf6-459c-8230-794bef0b847d",
+          "kind": "OptionList",
+          "list": [],
+          "meta": {
+            "link": null,
+            "name": ""
+          },
+          "editor": {
+            "task": "",
+            "comment": "",
+            "instruction": {
+              "id": "85bffbf2-b1a0-4aa1-aa3c-92f5456ad568",
+              "data": {
+                "html": ""
+              },
+              "kind": "HtmlItem",
+              "meta": null,
+              "editor": {
+                "task": "",
+                "comment": ""
+              }
+            }
+          }
+        },
+        "loopItemDisplay": {}
+      }
+    },
+    "condition": {
+      "true": null,
+      "false": null
+    }
+  }
+}

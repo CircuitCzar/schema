@@ -1,0 +1,40 @@
+{
+  "id": "45326d66-f152-4478-a9c3-266ab5d401d3",
+  "kind": "ExecutionNode",
+  "meta": {
+    "node_label": ""
+  },
+  "editor": {
+    "task": "",
+    "comment": "",
+    "instruction": {
+      "id": "bea0946b-d6a1-4d81-8fa2-e5a43aa83c5c",
+      "data": {
+        "html": ""
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    }
+  },
+  "structure": {
+    "code": "EEE",
+    "content": {
+      "id": "0a047a6e-6b40-4191-86ae-fb67c7271db7",
+      "kind": "ExecutionContent",
+      "meta": null,
+      "editor": null,
+      "content": {
+        "type": "Execution",
+        "executions": []
+      }
+    },
+    "condition": {
+      "true": null,
+      "false": null
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "afe6c72d-3d6f-456d-aaf0-0aa9c0bd49a3",
+  "kind": "QuotaContent",
+  "meta": null,
+  "editor": null,
+  "content": {
+    "type": "Quota",
+    "logics": [],
+    "quotas": {},
+    "markers": [
+      {
+        "id": "011197d1-962a-4813-92f0-9b2db8c2d275",
+        "name": "fsddfsdfsdfDFSDFSDFSD",
+        "go_to_node": null
+      },
+      {
+        "id": "d26661e7-fb22-4c37-b958-7380fec3a55a",
+        "name": "FSDFSDFSDFFFFFFFFFFFFFFFFFFFF",
+        "go_to_node": null
+      }
+    ]
+  }
+}

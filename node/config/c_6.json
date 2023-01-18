@@ -1,0 +1,42 @@
+{
+  "id": "f69242f7-0347-45b4-ad41-c5add99d706d",
+  "kind": "QuotaNode",
+  "meta": {
+    "node_label": ""
+  },
+  "editor": {
+    "task": "",
+    "comment": "",
+    "instruction": {
+      "id": "6ed0ba48-c338-46af-b2b7-81d927659b46",
+      "data": {
+        "html": ""
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    }
+  },
+  "structure": {
+    "code": "GGG",
+    "content": {
+      "id": "97e480dc-d957-4bde-bc3f-5f2fb92cd319",
+      "kind": "QuotaContent",
+      "meta": null,
+      "editor": null,
+      "content": {
+        "type": "Quota",
+        "logics": [],
+        "quotas": {},
+        "markers": []
+      }
+    },
+    "condition": {
+      "true": null,
+      "false": null
+    }
+  }
+}

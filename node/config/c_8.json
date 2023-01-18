@@ -1,0 +1,254 @@
+{
+  "id": "f80508d1-fabf-4088-b374-cf2b1ddfb512",
+  "kind": "ExitNode",
+  "meta": {
+    "node_label": ""
+  },
+  "editor": {
+    "task": "",
+    "comment": "",
+    "instruction": {
+      "id": "3ece68f9-f2ca-4e1e-af5d-4ed435bf63d8",
+      "data": {
+        "html": "<div><span></span></div>"
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    }
+  },
+  "structure": {
+    "code": "N8",
+    "text": {
+      "EN-US": {
+        "id": "ab72020e-bb85-4767-ae12-26402801a521",
+        "kind": "TextContent",
+        "meta": null,
+        "editor": {
+          "comment": ""
+        },
+        "content": {
+          "lan": "en-us",
+          "list": {
+            "id": "16fa4527-9cd3-4b3b-8f3f-56cc35952cf8",
+            "kind": "TextList",
+            "list": [
+              {
+                "id": "194150f3-cfd6-4285-a9d1-2a9a8e912e82",
+                "data": {
+                  "html": ""
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              }
+            ],
+            "meta": null,
+            "editor": {
+              "task": "",
+              "comment": ""
+            }
+          },
+          "type": "String"
+        }
+      },
+      "ZH-CN": {
+        "id": "5ab70723-b9a7-4ae6-a6e9-583162b066f6",
+        "kind": "TextContent",
+        "meta": null,
+        "editor": {
+          "comment": ""
+        },
+        "content": {
+          "lan": "zh-cn",
+          "list": {
+            "id": "068a9484-9e41-4437-a4ef-9c21195aaa9f",
+            "kind": "TextList",
+            "list": [
+              {
+                "id": "ab8c87e5-7704-4c18-9db4-2b6f3c040e70",
+                "data": {
+                  "html": "<div style=\"display: inline-block\">"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "0f6ef73f-0477-4717-b699-1270961cf668",
+                "data": {
+                  "html": "<div>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "2f2ef8f1-b39f-4bbd-b485-b146328ae155",
+                "data": {
+                  "html": "<span></span>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "8d8796c7-c0e1-4041-8b4c-1bcea75fe8e5",
+                "data": {
+                  "html": "</div>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "56a02e06-7395-489a-960f-e77ee36eab32",
+                "data": {
+                  "html": "</div>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              }
+            ],
+            "meta": null,
+            "editor": {
+              "task": "",
+              "comment": ""
+            }
+          },
+          "type": "String"
+        }
+      },
+      "default": {
+        "id": "ad3905d1-efd8-4b96-b2f3-458c285a98f9",
+        "kind": "TextContent",
+        "meta": null,
+        "editor": {
+          "comment": ""
+        },
+        "content": {
+          "lan": "en",
+          "list": {
+            "id": "47799b1e-bb03-4460-9a41-fb534c7e7301",
+            "kind": "TextList",
+            "list": [
+              {
+                "id": "22512b7b-797d-42fa-a181-eac95299313e",
+                "data": {
+                  "html": ""
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              }
+            ],
+            "meta": null,
+            "editor": {
+              "task": "",
+              "comment": ""
+            }
+          },
+          "type": "String"
+        }
+      }
+    },
+    "condition": {
+      "true": {
+        "id": "0d88244d-83ab-436c-b527-32635daf47f7",
+        "kind": "ConditionContent",
+        "meta": null,
+        "editor": null,
+        "content": {
+          "type": "IS",
+          "condition": [
+            {
+              "id": "9137edcd-5709-413e-8263-d2291fec50d9",
+              "kind": "ConditionContent",
+              "meta": null,
+              "editor": null,
+              "content": {
+                "type": "IS",
+                "condition": [
+                  {
+                    "id": "4fee7088-e9b1-4f8e-bd71-5992de2ad43e",
+                    "kind": "ConditionContent",
+                    "meta": null,
+                    "editor": null,
+                    "content": {
+                      "type": "AND",
+                      "condition": {
+                        "id": "5dbeed9f-6d1f-45ab-91b6-757cba0b8884",
+                        "kind": "ScriptContent",
+                        "meta": null,
+                        "editor": {
+                          "instruction": {
+                            "id": "1f875652-fb42-47f5-a4ec-bb7598ac5fe2",
+                            "data": {
+                              "html": ""
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        },
+                        "content": {
+                          "type": "Condition",
+                          "execution": {
+                            "id": "f662f09f-3c71-4c69-92b3-1e203c9a6c97",
+                            "return": {
+                              "value": ""
+                            },
+                            "arguments": {
+                              "setAnswer": {
+                                "value": {
+                                  "N1": "0"
+                                }
+                              },
+                              "setQuestion": {
+                                "value": "N1"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "false": null
+    },
+    "setStatus": "Screened Out"
+  }
+}

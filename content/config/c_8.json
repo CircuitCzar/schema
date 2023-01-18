@@ -1,0 +1,20 @@
+{
+  "id": "af85d488-f050-4a7d-ba6d-f4d182efb1f9",
+  "kind": "LoopContent",
+  "meta": null,
+  "editor": null,
+  "content": {
+    "type": "Mark",
+    "logics": [],
+    "markers": [
+      {
+        "id": "cf8b5252-9adb-45b4-bafc-99752d4058b5",
+        "name": "1"
+      },
+      {
+        "id": "bef1bdd0-d042-42d0-9e59-fc033587a407",
+        "name": "2"
+      }
+    ]
+  }
+}

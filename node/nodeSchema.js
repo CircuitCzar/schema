@@ -1,3 +1,15 @@
+const htmlElementSchema = require('../element/elementSchema').htmlElementSchema;
+const textContentSchema = require('../content/contentSchema').textContentSchema;
+const questionContentSchema =
+  require('../content/contentSchema').questionContentSchema;
+const blockContentSchema =
+  require('../content/contentSchema').blockContentSchema;
+const loopContentSchema = require('../content/contentSchema').loopContentSchema;
+const executionContentSchema =
+  require('../content/contentSchema').executionContentSchema;
+const markContentSchema = require('../content/contentSchema').markContentSchema;
+const quotaContentSchema =
+  require('../content/contentSchema').quotaContentSchema;
 // 问题节点schema
 const questionNodeSchema = {
   $schema: 'http://json-schema.org/draft-07/schema#',
@@ -11,9 +23,7 @@ const questionNodeSchema = {
       properties: {
         comment: { type: 'string' },
         task: { type: 'string' },
-        instruction: {
-          type: 'object',
-        },
+        instruction: htmlElementSchema,
       },
     },
     structure: {
@@ -21,8 +31,14 @@ const questionNodeSchema = {
       properties: {
         type: { const: 'required' },
         code: { type: 'string' },
-        content: { type: 'object' },
-        text: { type: 'object' },
+        content: questionContentSchema,
+        text: {
+          type: 'object',
+          properties: {
+            'EN-US': textContentSchema,
+            'ZH-CN': textContentSchema,
+          },
+        },
         instruction: { type: 'object' },
         condition: { type: 'object' },
         appearance: {
@@ -49,16 +65,14 @@ const blockNodeSchema = {
       properties: {
         comment: { type: 'string' },
         task: { type: 'string' },
-        instruction: {
-          type: 'object',
-        },
+        instruction: htmlElementSchema,
       },
     },
     structure: {
       type: 'object',
       properties: {
         code: { type: 'string' },
-        content: { type: 'object' },
+        content: blockContentSchema,
         condition: { type: 'object' },
       },
     },
@@ -78,16 +92,14 @@ const loopNodeSchema = {
       properties: {
         comment: { type: 'string' },
         task: { type: 'string' },
-        instruction: {
-          type: 'object',
-        },
+        instruction: htmlElementSchema,
       },
     },
     structure: {
       type: 'object',
       properties: {
         code: { type: 'string' },
-        content: { type: 'object' },
+        content: loopContentSchema,
         condition: { type: 'object' },
       },
     },
@@ -107,14 +119,14 @@ const executionNodeSchema = {
       properties: {
         comment: { type: 'string' },
         task: { type: 'string' },
-        instruction: { type: 'object' },
+        instruction: htmlElementSchema,
       },
     },
     structure: {
       type: 'object',
       properties: {
         code: { type: 'string' },
-        content: { type: 'object' },
+        content: executionContentSchema,
         condition: { type: 'object' },
       },
     },
@@ -134,14 +146,14 @@ const markNodeSchema = {
       properties: {
         comment: { type: 'string' },
         task: { type: 'string' },
-        instruction: { type: 'object' },
+        instruction: htmlElementSchema,
       },
     },
     structure: {
       type: 'object',
       properties: {
         code: { type: 'string' },
-        content: { type: 'object' },
+        content: markContentSchema,
         condition: { type: 'object' },
       },
     },
@@ -161,14 +173,14 @@ const quotaNodeSchema = {
       properties: {
         comment: { type: 'string' },
         task: { type: 'string' },
-        instruction: { type: 'object' },
+        instruction: htmlElementSchema,
       },
     },
     structure: {
       type: 'object',
       properties: {
         code: { type: 'string' },
-        content: { type: 'object' },
+        content: quotaContentSchema,
         condition: { type: 'object' },
       },
     },
@@ -188,14 +200,21 @@ const displayNodeSchema = {
       properties: {
         comment: { type: 'string' },
         task: { type: 'string' },
-        instruction: { type: 'object' },
+        instruction: htmlElementSchema,
       },
     },
     structure: {
       type: 'object',
       properties: {
         code: { type: 'string' },
-        text: { type: 'object' },
+        text: {
+          type: 'object',
+          properties: {
+            default: textContentSchema,
+            'EN-US': textContentSchema,
+            'ZH-CN': textContentSchema,
+          },
+        },
         condition: { type: 'object' },
         appearance: {
           type: 'object',
@@ -221,14 +240,21 @@ const exitNodeSchema = {
       properties: {
         comment: { type: 'string' },
         task: { type: 'string' },
-        instruction: { type: 'object' },
+        instruction: htmlElementSchema,
       },
     },
     structure: {
       type: 'object',
       properties: {
         code: { type: 'string' },
-        text: { type: 'object' },
+        text: {
+          type: 'object',
+          properties: {
+            default: textContentSchema,
+            'EN-US': textContentSchema,
+            'ZH-CN': textContentSchema,
+          },
+        },
         condition: { type: 'object' },
         setStatus: {
           enum: ['Complete', 'Quota Full', 'Screened Out'],
@@ -236,4 +262,15 @@ const exitNodeSchema = {
       },
     },
   },
+};
+
+module.exports = {
+  questionNodeSchema,
+  blockNodeSchema,
+  loopNodeSchema,
+  executionNodeSchema,
+  markNodeSchema,
+  quotaNodeSchema,
+  displayNodeSchema,
+  exitNodeSchema,
 };

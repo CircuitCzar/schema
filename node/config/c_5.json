@@ -1,0 +1,41 @@
+{
+  "id": "a263f238-129f-4741-bd00-fc9ce4f9b732",
+  "kind": "MarkNode",
+  "meta": {
+    "node_label": ""
+  },
+  "editor": {
+    "task": "",
+    "comment": "",
+    "instruction": {
+      "id": "0808e3c0-3708-4a17-a1f2-e05dc0c98c0a",
+      "data": {
+        "html": ""
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    }
+  },
+  "structure": {
+    "code": "FFF",
+    "content": {
+      "id": "640afb52-7992-4c84-b5fb-78cfb946e561",
+      "kind": "LoopContent",
+      "meta": null,
+      "editor": null,
+      "content": {
+        "type": "Mark",
+        "logics": [],
+        "markers": []
+      }
+    },
+    "condition": {
+      "true": null,
+      "false": null
+    }
+  }
+}

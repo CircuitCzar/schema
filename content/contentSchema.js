@@ -1,4 +1,71 @@
 const textListSchema = require('../list/listSchema').textListSchema;
+const optionListSchema = require('../list/listSchema').optionListSchema;
+
+/**
+ * blockNodeSchema,
+  loopNodeSchema,
+  executionNodeSchema,
+  markNodeSchema,
+  quotaNodeSchema,
+  displayNodeSchema,
+  exitNodeSchema,
+ */
+const questionNodeSchema = require('../node/nodeSchema').questionNodeSchema;
+const blockNodeSchema = require('../node/nodeSchema').blockNodeSchema;
+const loopNodeSchema = require('../node/nodeSchema').loopNodeSchema;
+const executionNodeSchema = require('../node/nodeSchema').executionNodeSchema;
+const markNodeSchema = require('../node/nodeSchema').markNodeSchema;
+const quotaNodeSchema = require('../node/nodeSchema').quotaNodeSchema;
+const displayNodeSchema = require('../node/nodeSchema').displayNodeSchema;
+const exitNodeSchema = require('../node/nodeSchema').exitNodeSchema;
+
+const randomizedSchema = {
+  type: 'array',
+  items: {
+    type: 'object',
+    properties: {
+      active: { type: 'boolean' },
+      type: { const: 'auto' },
+      order: {
+        type: 'object',
+        properties: {
+          recordedFormat: { type: 'string' },
+          script: { type: 'string' },
+          predefined: { type: 'array', items: { type: 'string' } },
+        },
+      },
+      fixedPositionFor: { type: 'object' },
+      options: { type: 'object' },
+    },
+  },
+};
+
+const groupedSchema = {
+  type: 'array',
+  items: {
+    type: 'object',
+    properties: {
+      active: { type: 'boolean' },
+      randomized: {
+        type: 'object',
+        properties: {
+          active: { type: 'boolean' },
+          type: { const: 'auto' },
+          fixedPositionFor: { type: 'object' },
+          options: { type: 'object' },
+          order: {
+            type: 'object',
+            properties: {
+              recordedFormat: { type: 'string' },
+              script: { type: 'string' },
+              predefined: { type: 'array' },
+            },
+          },
+        },
+      },
+    },
+  },
+};
 
 // question content
 const questionContentSchema = {
@@ -6,69 +73,30 @@ const questionContentSchema = {
   type: 'object',
   properties: {
     id: { type: 'string', format: 'uuid' },
-    kind: {
-      const: 'QuestionContent',
-    },
+    kind: { const: 'QuestionContent' },
     meta: {
       type: 'object',
       properties: {
-        randomized: {
-          type: 'array',
-          items: {
-            type: 'object',
-            properties: {
-              active: { type: 'boolean' },
-              type: {
-                const: 'auto',
-              },
-              order: {
-                type: 'object',
-                properties: {
-                  recordedFormat: { type: 'string' },
-                  script: { type: 'string' },
-                  predefined: { type: 'array', items: { type: 'string' } },
-                },
-              },
-              fixedPositionFor: {
-                type: 'object',
-              },
-              options: {
-                type: 'object',
-              },
-            },
+        randomized: randomizedSchema,
+        grouped: groupedSchema,
+        extraData: {
+          type: 'object',
+          properties: {
+            oe: { type: 'object' },
           },
         },
-        grouped: {
+      },
+    },
+    editor: { type: 'null' },
+    content: {
+      type: 'object',
+      properties: {
+        type: {
+          enum: ['Single', 'Multi', 'OpenEnd', 'Numeric'],
+        },
+        options: {
           type: 'array',
-          items: {
-            type: 'object',
-            properties: {
-              active: { type: 'boolean' },
-              randomized: {
-                type: 'object',
-                properties: {
-                  active: { type: 'boolean' },
-                  type: { const: 'auto' },
-                  fixedPositionFor: {
-                    type: 'object',
-                  },
-                  options: {
-                    type: 'object',
-                  },
-                  order: {
-                    type: 'object',
-                    properties: {
-                      recordedFormat: { type: 'string' },
-                      script: { type: 'string' },
-                      predefined: {
-                        type: 'array',
-                      },
-                    },
-                  },
-                },
-              },
-            },
-          },
+          item: { type: 'array' },
         },
       },
     },
@@ -79,6 +107,16 @@ const questionContentSchema = {
 const blockContentSchema = {
   $schema: 'http://json-schema.org/draft-07/schema#',
   type: 'object',
+  $defs: {
+    questionNodeSchema,
+    blockNodeSchema,
+    loopNodeSchema,
+    executionNodeSchema,
+    markNodeSchema,
+    quotaNodeSchema,
+    displayNodeSchema,
+    exitNodeSchema,
+  },
   properties: {
     id: { type: 'string', format: 'uuid' },
     kind: { const: 'BlockContent' },
@@ -87,11 +125,21 @@ const blockContentSchema = {
     content: {
       type: 'object',
       properties: {
-        type: {
-          const: 'Block',
-        },
+        type: { const: 'Block' },
         list: {
           type: 'array',
+          item: {
+            anyOf: [
+              { $ref: '#/$defs/questionNodeSchema' },
+              { $ref: '#/$defs/blockNodeSchema' },
+              { $ref: '#/$defs/loopNodeSchema' },
+              { $ref: '#/$defs/executionNodeSchema' },
+              { $ref: '#/$defs/markNodeSchema' },
+              { $ref: '#/$defs/quotaNodeSchema' },
+              { $ref: '#/$defs/displayNodeSchema' },
+              { $ref: '#/$defs/exitNodeSchema' },
+            ],
+          },
         },
       },
     },
@@ -111,7 +159,16 @@ const executionContentSchema = {
       type: 'object',
       properties: {
         type: { const: 'Execution' },
-        executions: { type: 'array' },
+        executions: {
+          type: 'array',
+          item: {
+            type: 'object',
+            properties: {
+              id: { type: 'string', format: 'uuid' },
+              arguments: { type: 'array' },
+            },
+          },
+        },
       },
     },
   },
@@ -130,12 +187,10 @@ const loopContentSchema = {
       type: 'object',
       properties: {
         type: { const: 'Loop' },
-        options: 'TODO',
+        options: optionListSchema,
         logics: { type: 'array' },
         list: { type: 'array' },
-        loopItemDisplay: {
-          type: 'object',
-        },
+        loopItemDisplay: { type: 'object' },
       },
     },
   },
@@ -176,7 +231,7 @@ const quotaContentSchema = {
         type: { const: 'Quota' },
         markers: { type: 'array' },
         logics: { type: 'array' },
-        quotas: { type: 'array' },
+        quotas: { type: 'object' },
       },
     },
   },
