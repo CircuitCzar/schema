@@ -2,9 +2,10 @@ const htmlElementSchema = require('../element/elementSchema').htmlElementSchema;
 const textContentSchema = require('../content/contentSchema').textContentSchema;
 const questionContentSchema =
   require('../content/contentSchema').questionContentSchema;
-const blockContentSchema =
-  require('../content/contentSchema').blockContentSchema;
-const loopContentSchema = require('../content/contentSchema').loopContentSchema;
+const getBlockContentSchema =
+  require('../content/contentSchema').getBlockContentSchema;
+const getLoopContentSchema =
+  require('../content/contentSchema').getLoopContentSchema;
 const executionContentSchema =
   require('../content/contentSchema').executionContentSchema;
 const markContentSchema = require('../content/contentSchema').markContentSchema;
@@ -52,58 +53,99 @@ const questionNodeSchema = {
   },
 };
 
-// 块级节点schema
-const blockNodeSchema = {
-  $schema: 'http://json-schema.org/draft-07/schema#',
-  type: 'object',
-  properties: {
-    id: { type: 'string', format: 'uuid' },
-    kind: { const: 'BlockNode' },
-    meta: { type: 'object', properties: { node_label: { type: 'string' } } },
-    editor: {
-      type: 'object',
-      properties: {
-        comment: { type: 'string' },
-        task: { type: 'string' },
-        instruction: htmlElementSchema,
+/**
+ * type
+ * null,block,loop,main
+ */
+const getBlockNodeSchema = function (type = 'null') {
+  // 块级节点schema
+  const blockNodeSchema = {
+    $schema: 'http://json-schema.org/draft-07/schema#',
+    type: 'object',
+    properties: {
+      id: { type: 'string', format: 'uuid' },
+      kind: { const: 'BlockNode' },
+      meta: { type: 'object', properties: { node_label: { type: 'string' } } },
+      editor: {
+        type: 'object',
+        properties: {
+          comment: { type: 'string' },
+          task: { type: 'string' },
+          instruction: htmlElementSchema,
+        },
+      },
+      structure: {
+        type: 'object',
+        properties: {
+          code: { type: 'string' },
+          content: getBlockContentSchema(type),
+          condition: { type: 'object' },
+        },
       },
     },
-    structure: {
-      type: 'object',
-      properties: {
-        code: { type: 'string' },
-        content: blockContentSchema,
-        condition: { type: 'object' },
-      },
-    },
-  },
+  };
+
+  if (type === 'block') {
+    blockNodeSchema.$defs = {
+      questionNodeSchema,
+      loopNodeSchema: getLoopNodeSchema(type),
+      executionNodeSchema,
+      markNodeSchema,
+      quotaNodeSchema,
+      displayNodeSchema,
+      exitNodeSchema,
+    };
+    return blockNodeSchema;
+  }
+  return blockNodeSchema;
 };
 
-// 循环节点schema
-const loopNodeSchema = {
-  $schema: 'http://json-schema.org/draft-07/schema#',
-  type: 'object',
-  properties: {
-    id: { type: 'string', format: 'uuid' },
-    kind: { const: 'LoopNode' },
-    meta: { type: 'object', properties: { node_label: { type: 'string' } } },
-    editor: {
-      type: 'object',
-      properties: {
-        comment: { type: 'string' },
-        task: { type: 'string' },
-        instruction: htmlElementSchema,
+/**
+ * type
+ * null,block,loop,main
+ */
+const getLoopNodeSchema = function (type = 'null') {
+  // 循环节点schema
+  const loopNodeSchema = {
+    $schema: 'http://json-schema.org/draft-07/schema#',
+    type: 'object',
+    properties: {
+      id: { type: 'string', format: 'uuid' },
+      kind: { const: 'LoopNode' },
+      meta: { type: 'object', properties: { node_label: { type: 'string' } } },
+      editor: {
+        type: 'object',
+        properties: {
+          comment: { type: 'string' },
+          task: { type: 'string' },
+          instruction: htmlElementSchema,
+        },
+      },
+      structure: {
+        type: 'object',
+        properties: {
+          code: { type: 'string' },
+          content: getLoopContentSchema(type),
+          condition: { type: 'object' },
+        },
       },
     },
-    structure: {
-      type: 'object',
-      properties: {
-        code: { type: 'string' },
-        content: loopContentSchema,
-        condition: { type: 'object' },
-      },
-    },
-  },
+  };
+
+  if (type === 'loop') {
+    loopNodeSchema.$defs = {
+      questionNodeSchema,
+      blockNodeSchema: getBlockNodeSchema(type),
+      executionNodeSchema,
+      markNodeSchema,
+      quotaNodeSchema,
+      displayNodeSchema,
+      exitNodeSchema,
+    };
+
+    return loopNodeSchema;
+  }
+  return loopNodeSchema;
 };
 
 // 执行节点schema
@@ -266,8 +308,8 @@ const exitNodeSchema = {
 
 module.exports = {
   questionNodeSchema,
-  blockNodeSchema,
-  loopNodeSchema,
+  getBlockNodeSchema,
+  getLoopNodeSchema,
   executionNodeSchema,
   markNodeSchema,
   quotaNodeSchema,

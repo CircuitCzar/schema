@@ -11,8 +11,8 @@ const optionListSchema = require('../list/listSchema').optionListSchema;
   exitNodeSchema,
  */
 const questionNodeSchema = require('../node/nodeSchema').questionNodeSchema;
-const blockNodeSchema = require('../node/nodeSchema').blockNodeSchema;
-const loopNodeSchema = require('../node/nodeSchema').loopNodeSchema;
+const getBlockNodeSchema = require('../node/nodeSchema').getBlockNodeSchema;
+const getLoopNodeSchema = require('../node/nodeSchema').getLoopNodeSchema;
 const executionNodeSchema = require('../node/nodeSchema').executionNodeSchema;
 const markNodeSchema = require('../node/nodeSchema').markNodeSchema;
 const quotaNodeSchema = require('../node/nodeSchema').quotaNodeSchema;
@@ -104,46 +104,81 @@ const questionContentSchema = {
 };
 
 // block content
-const blockContentSchema = {
-  $schema: 'http://json-schema.org/draft-07/schema#',
-  type: 'object',
-  $defs: {
-    questionNodeSchema,
-    blockNodeSchema,
-    loopNodeSchema,
-    executionNodeSchema,
-    markNodeSchema,
-    quotaNodeSchema,
-    displayNodeSchema,
-    exitNodeSchema,
-  },
-  properties: {
-    id: { type: 'string', format: 'uuid' },
-    kind: { const: 'BlockContent' },
-    meta: { type: 'null' },
-    editor: { type: 'null' },
-    content: {
-      type: 'object',
-      properties: {
-        type: { const: 'Block' },
-        list: {
-          type: 'array',
-          item: {
-            anyOf: [
-              { $ref: '#/$defs/questionNodeSchema' },
-              { $ref: '#/$defs/blockNodeSchema' },
-              { $ref: '#/$defs/loopNodeSchema' },
-              { $ref: '#/$defs/executionNodeSchema' },
-              { $ref: '#/$defs/markNodeSchema' },
-              { $ref: '#/$defs/quotaNodeSchema' },
-              { $ref: '#/$defs/displayNodeSchema' },
-              { $ref: '#/$defs/exitNodeSchema' },
-            ],
+/**
+ * type
+ * null,block,loop,main
+ */
+const getBlockContentSchema = function (type = 'null') {
+  const blockContentSchema = {
+    $schema: 'http://json-schema.org/draft-07/schema#',
+    type: 'object',
+    properties: {
+      id: { type: 'string', format: 'uuid' },
+      kind: { const: 'BlockContent' },
+      meta: { type: 'null' },
+      editor: { type: 'null' },
+      content: {
+        type: 'object',
+        properties: {
+          type: { const: 'Block' },
+          list: {
+            type: 'array',
+            items: {
+              type: 'object',
+            },
           },
         },
       },
     },
-  },
+  };
+  if (type === 'block') {
+    blockContentSchema.properties.content.properties.list.items = {
+      anyOf: [
+        { $ref: '#/$defs/questionNodeSchema' },
+        { $ref: '#' },
+        { $ref: '#/$defs/loopNodeSchema' },
+        { $ref: '#/$defs/executionNodeSchema' },
+        { $ref: '#/$defs/markNodeSchema' },
+        { $ref: '#/$defs/quotaNodeSchema' },
+        { $ref: '#/$defs/displayNodeSchema' },
+        { $ref: '#/$defs/exitNodeSchema' },
+      ],
+    };
+    return blockContentSchema;
+  }
+
+  if (type === 'loop') {
+    blockContentSchema.properties.content.properties.list.items = {
+      anyOf: [
+        { $ref: '#/$defs/questionNodeSchema' },
+        { $ref: '#' },
+        { $ref: '#/$defs/blockNodeSchema' },
+        { $ref: '#/$defs/executionNodeSchema' },
+        { $ref: '#/$defs/markNodeSchema' },
+        { $ref: '#/$defs/quotaNodeSchema' },
+        { $ref: '#/$defs/displayNodeSchema' },
+        { $ref: '#/$defs/exitNodeSchema' },
+      ],
+    };
+    return blockContentSchema;
+  }
+
+  if (type === 'main') {
+    blockContentSchema.properties.content.properties.list.items = {
+      anyOf: [
+        { $ref: '#/$defs/questionNodeSchema' },
+        { $ref: '#/$defs/blockNodeSchema' },
+        { $ref: '#/$defs/loopNodeSchema' },
+        { $ref: '#/$defs/executionNodeSchema' },
+        { $ref: '#/$defs/markNodeSchema' },
+        { $ref: '#/$defs/quotaNodeSchema' },
+        { $ref: '#/$defs/displayNodeSchema' },
+        { $ref: '#/$defs/exitNodeSchema' },
+      ],
+    };
+    return blockContentSchema;
+  }
+  return blockContentSchema;
 };
 
 // execution content
@@ -174,26 +209,80 @@ const executionContentSchema = {
   },
 };
 
+/**
+ * type
+ * null,block,loop,main
+ */
 // loop content
-const loopContentSchema = {
-  $schema: 'http://json-schema.org/draft-07/schema#',
-  type: 'object',
-  properties: {
-    id: { type: 'string', format: 'uuid' },
-    kind: { const: 'LoopContent' },
-    meta: { type: 'null' },
-    editor: { type: 'null' },
-    content: {
-      type: 'object',
-      properties: {
-        type: { const: 'Loop' },
-        options: optionListSchema,
-        logics: { type: 'array' },
-        list: { type: 'array' },
-        loopItemDisplay: { type: 'object' },
+const getLoopContentSchema = function (type = 'null') {
+  const loopContentSchema = {
+    $schema: 'http://json-schema.org/draft-07/schema#',
+    type: 'object',
+    properties: {
+      id: { type: 'string', format: 'uuid' },
+      kind: { const: 'LoopContent' },
+      meta: { type: 'null' },
+      editor: { type: 'null' },
+      content: {
+        type: 'object',
+        properties: {
+          type: { const: 'Loop' },
+          options: optionListSchema,
+          logics: { type: 'array' },
+          list: { type: 'array' },
+          loopItemDisplay: { type: 'object' },
+        },
       },
     },
-  },
+  };
+
+  if (type === 'block') {
+    loopContentSchema.properties.content.properties.list.items = {
+      anyOf: [
+        { $ref: '#/$defs/questionNodeSchema' },
+        { $ref: '#' },
+        { $ref: '#/$defs/loopNodeSchema' },
+        { $ref: '#/$defs/executionNodeSchema' },
+        { $ref: '#/$defs/markNodeSchema' },
+        { $ref: '#/$defs/quotaNodeSchema' },
+        { $ref: '#/$defs/displayNodeSchema' },
+        { $ref: '#/$defs/exitNodeSchema' },
+      ],
+    };
+    return loopContentSchema;
+  }
+
+  if (type === 'loop') {
+    loopContentSchema.properties.content.properties.list.items = {
+      anyOf: [
+        { $ref: '#/$defs/questionNodeSchema' },
+        { $ref: '#' },
+        { $ref: '#/$defs/blockNodeSchema' },
+        { $ref: '#/$defs/executionNodeSchema' },
+        { $ref: '#/$defs/markNodeSchema' },
+        { $ref: '#/$defs/quotaNodeSchema' },
+        { $ref: '#/$defs/displayNodeSchema' },
+        { $ref: '#/$defs/exitNodeSchema' },
+      ],
+    };
+    return loopContentSchema;
+  }
+  if (type === 'main') {
+    loopContentSchema.properties.content.properties.list.items = {
+      anyOf: [
+        { $ref: '#/$defs/questionNodeSchema' },
+        { $ref: '#/$defs/blockNodeSchema' },
+        { $ref: '#/$defs/loopNodeSchema' },
+        { $ref: '#/$defs/executionNodeSchema' },
+        { $ref: '#/$defs/markNodeSchema' },
+        { $ref: '#/$defs/quotaNodeSchema' },
+        { $ref: '#/$defs/displayNodeSchema' },
+        { $ref: '#/$defs/exitNodeSchema' },
+      ],
+    };
+    return loopContentSchema;
+  }
+  return loopContentSchema;
 };
 
 // mark content
@@ -267,9 +356,9 @@ const textContentSchema = {
 module.exports = {
   textContentSchema,
   questionContentSchema,
-  blockContentSchema,
+  getBlockContentSchema,
   executionContentSchema,
-  loopContentSchema,
+  getLoopContentSchema,
   markContentSchema,
   quotaContentSchema,
 };
