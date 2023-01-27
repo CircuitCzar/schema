@@ -14,8 +14,8 @@ const {
   lanSchema,
   builtinScriptSchema,
   pluginInfoSchema,
+  reusableListSchema,
 } = require('../meta/metaSchema');
-const { optionListSchema } = require('../list/listSchema');
 
 const questionnaireSchema = {
   $schema: 'http://json-schema.org/draft-07/schema#',
@@ -52,6 +52,21 @@ const questionnaireSchema = {
         ],
       },
     },
+    interviewList: {
+      type: 'array',
+      items: {
+        anyOf: [
+          questionNodeSchema,
+          getBlockNodeSchema('main'),
+          getLoopNodeSchema('main'),
+          executionNodeSchema,
+          markNodeSchema,
+          quotaNodeSchema,
+          displayNodeSchema,
+          exitNodeSchema,
+        ],
+      },
+    },
     meta: {
       type: 'object',
       properties: {
@@ -61,19 +76,13 @@ const questionnaireSchema = {
           enum: ['ZH-CN', 'EN-US'],
         },
         pluginInfo: pluginInfoSchema,
-        optionLists: {
-          oneOf: [
-            optionListSchema,
-            { type: 'object', additionalProperties: false },
-          ],
-        },
+        optionLists: reusableListSchema,
         builtin_scripts: builtinScriptSchema,
       },
       required: [
         'lan',
         'scripts',
         'defaultLan',
-        'pluginInfo',
         'optionLists',
         'builtin_scripts',
       ],
