@@ -1,0 +1,18 @@
+name: CI
+on:
+  push:
+    branches: main
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14.x'
+      - name: Installing Dependencies
+        run: yarn install
+      - name: Running Test
+        run: yarn test

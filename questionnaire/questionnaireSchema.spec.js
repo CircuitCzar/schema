@@ -16,4 +16,4 @@ test('questionnaire 错误测试1', () => {
   );
 });
 
-console.log(v.validate(instance2, questionnaireSchema));
+// console.log(v.validate(instance2, questionnaireSchema));
