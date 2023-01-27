@@ -15,5 +15,5 @@ const beautify = (code, { tab = 2 } = {}) => {
 };
 fs.writeFileSync(
   './dist/configSchema.json',
-  beautify(JSON.stringify(questionnaireSchema))
+  beautify(JSON.stringify(questionnaireSchema.questionnaireSchema))
 );
