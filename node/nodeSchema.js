@@ -26,6 +26,8 @@ const questionNodeSchema = {
         task: { type: 'string' },
         instruction: htmlElementSchema,
       },
+      required: ['comment', 'task', 'instruction'],
+      additionalProperties: false,
     },
     structure: {
       type: 'object',
@@ -39,6 +41,7 @@ const questionNodeSchema = {
             'EN-US': textContentSchema,
             'ZH-CN': textContentSchema,
           },
+          additionalProperties: false,
         },
         instruction: { type: 'object' },
         condition: { type: 'object' },
@@ -47,10 +50,24 @@ const questionNodeSchema = {
           properties: {
             plugin: { type: 'object' },
           },
+          required: ['plugin'],
+          additionalProperties: false,
         },
       },
+      required: [
+        'type',
+        'code',
+        'content',
+        'text',
+        'instruction',
+        'condition',
+        'appearance',
+      ],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'structure'],
+  additionalProperties: false,
 };
 
 /**
@@ -65,7 +82,14 @@ const getBlockNodeSchema = function (type = 'null') {
     properties: {
       id: { type: 'string', format: 'uuid' },
       kind: { const: 'BlockNode' },
-      meta: { type: 'object', properties: { node_label: { type: 'string' } } },
+      meta: {
+        type: 'object',
+        properties: {
+          node_label: { type: 'string' },
+        },
+        required: ['node_label'],
+        additionalProperties: false,
+      },
       editor: {
         type: 'object',
         properties: {
@@ -73,6 +97,8 @@ const getBlockNodeSchema = function (type = 'null') {
           task: { type: 'string' },
           instruction: htmlElementSchema,
         },
+        required: ['comment', 'task', 'instruction'],
+        additionalProperties: false,
       },
       structure: {
         type: 'object',
@@ -81,8 +107,12 @@ const getBlockNodeSchema = function (type = 'null') {
           content: getBlockContentSchema(type),
           condition: { type: 'object' },
         },
+        required: ['code', 'content', 'condition'],
+        additionalProperties: false,
       },
     },
+    required: ['id', 'kind', 'meta', 'editor', 'structure'],
+    additionalProperties: false,
   };
 
   if (type === 'block') {
@@ -112,7 +142,12 @@ const getLoopNodeSchema = function (type = 'null') {
     properties: {
       id: { type: 'string', format: 'uuid' },
       kind: { const: 'LoopNode' },
-      meta: { type: 'object', properties: { node_label: { type: 'string' } } },
+      meta: {
+        type: 'object',
+        properties: { node_label: { type: 'string' } },
+        required: ['node_label'],
+        additionalProperties: false,
+      },
       editor: {
         type: 'object',
         properties: {
@@ -120,6 +155,8 @@ const getLoopNodeSchema = function (type = 'null') {
           task: { type: 'string' },
           instruction: htmlElementSchema,
         },
+        required: ['comment', 'task', 'instruction'],
+        additionalProperties: false,
       },
       structure: {
         type: 'object',
@@ -128,8 +165,12 @@ const getLoopNodeSchema = function (type = 'null') {
           content: getLoopContentSchema(type),
           condition: { type: 'object' },
         },
+        required: ['code', 'content', 'condition'],
+        additionalProperties: false,
       },
     },
+    required: ['id', 'kind', 'meta', 'editor', 'structure'],
+    additionalProperties: false,
   };
 
   if (type === 'loop') {
@@ -155,7 +196,12 @@ const executionNodeSchema = {
   properties: {
     id: { type: 'string', format: 'uuid' },
     kind: { const: 'ExecutionNode' },
-    meta: { type: 'object', properties: { node_label: { type: 'string' } } },
+    meta: {
+      type: 'object',
+      properties: { node_label: { type: 'string' } },
+      required: ['node_label'],
+      additionalProperties: false,
+    },
     editor: {
       type: 'object',
       properties: {
@@ -163,6 +209,8 @@ const executionNodeSchema = {
         task: { type: 'string' },
         instruction: htmlElementSchema,
       },
+      required: ['comment', 'task', 'instruction'],
+      additionalProperties: false,
     },
     structure: {
       type: 'object',
@@ -171,8 +219,12 @@ const executionNodeSchema = {
         content: executionContentSchema,
         condition: { type: 'object' },
       },
+      required: ['code', 'content', 'condition'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'structure'],
+  additionalProperties: false,
 };
 
 // 标记节点schema
@@ -182,7 +234,12 @@ const markNodeSchema = {
   properties: {
     id: { type: 'string', format: 'uuid' },
     kind: { const: 'MarkNode' },
-    meta: { type: 'object', properties: { node_label: { type: 'string' } } },
+    meta: {
+      type: 'object',
+      properties: { node_label: { type: 'string' } },
+      required: ['node_label'],
+      additionalProperties: false,
+    },
     editor: {
       type: 'object',
       properties: {
@@ -190,6 +247,8 @@ const markNodeSchema = {
         task: { type: 'string' },
         instruction: htmlElementSchema,
       },
+      required: ['comment', 'task', 'instruction'],
+      additionalProperties: false,
     },
     structure: {
       type: 'object',
@@ -198,8 +257,12 @@ const markNodeSchema = {
         content: markContentSchema,
         condition: { type: 'object' },
       },
+      required: ['code', 'content', 'condition'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'structure'],
+  additionalProperties: false,
 };
 
 // 配额节点schema
@@ -209,7 +272,12 @@ const quotaNodeSchema = {
   properties: {
     id: { type: 'string', format: 'uuid' },
     kind: { const: 'QuotaNode' },
-    meta: { type: 'object', properties: { node_label: { type: 'string' } } },
+    meta: {
+      type: 'object',
+      properties: { node_label: { type: 'string' } },
+      required: ['node_label'],
+      additionalProperties: false,
+    },
     editor: {
       type: 'object',
       properties: {
@@ -217,6 +285,8 @@ const quotaNodeSchema = {
         task: { type: 'string' },
         instruction: htmlElementSchema,
       },
+      required: ['comment', 'task', 'instruction'],
+      additionalProperties: false,
     },
     structure: {
       type: 'object',
@@ -225,8 +295,12 @@ const quotaNodeSchema = {
         content: quotaContentSchema,
         condition: { type: 'object' },
       },
+      required: ['code', 'content', 'condition'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'structure'],
+  additionalProperties: false,
 };
 
 // 展示节点schema
@@ -236,7 +310,12 @@ const displayNodeSchema = {
   properties: {
     id: { type: 'string', format: 'uuid' },
     kind: { const: 'DisplayNode' },
-    meta: { type: 'object', properties: { node_label: { type: 'string' } } },
+    meta: {
+      type: 'object',
+      properties: { node_label: { type: 'string' } },
+      required: ['node_label'],
+      additionalProperties: false,
+    },
     editor: {
       type: 'object',
       properties: {
@@ -244,6 +323,8 @@ const displayNodeSchema = {
         task: { type: 'string' },
         instruction: htmlElementSchema,
       },
+      required: ['comment', 'task', 'instruction'],
+      additionalProperties: false,
     },
     structure: {
       type: 'object',
@@ -256,6 +337,7 @@ const displayNodeSchema = {
             'EN-US': textContentSchema,
             'ZH-CN': textContentSchema,
           },
+          additionalProperties: false,
         },
         condition: { type: 'object' },
         appearance: {
@@ -263,10 +345,16 @@ const displayNodeSchema = {
           properties: {
             plugin: { type: 'object' },
           },
+          required: ['plugin'],
+          additionalProperties: false,
         },
       },
+      required: ['code', 'text', 'condition', 'appearance'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'structure'],
+  additionalProperties: false,
 };
 
 // 退出节点schema
@@ -284,6 +372,8 @@ const exitNodeSchema = {
         task: { type: 'string' },
         instruction: htmlElementSchema,
       },
+      required: ['comment', 'task', 'instruction'],
+      additionalProperties: false,
     },
     structure: {
       type: 'object',
@@ -296,14 +386,19 @@ const exitNodeSchema = {
             'EN-US': textContentSchema,
             'ZH-CN': textContentSchema,
           },
+          additionalProperties: false,
         },
         condition: { type: 'object' },
         setStatus: {
           enum: ['Complete', 'Quota Full', 'Screened Out'],
         },
       },
+      required: ['code', 'text', 'condition', 'setStatus'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'structure'],
+  additionalProperties: false,
 };
 
 module.exports = {

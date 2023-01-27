@@ -17,3 +17,5 @@ test('TextList 正确测试2', () => {
 test('OptionList 正确测试1', () => {
   expect(v.validate(instance3, optionListSchema).errors.length).toBe(0);
 });
+
+// console.log(v.validate(instance1, textListSchema));

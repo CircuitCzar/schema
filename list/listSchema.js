@@ -19,6 +19,8 @@ const optionListSchema = {
           ],
         },
       },
+      required: ['name', 'link'],
+      additionalProperties: false,
     },
     editor: {
       type: 'object',
@@ -27,9 +29,13 @@ const optionListSchema = {
         task: { type: 'string' },
         instruction: htmlElementSchema,
       },
+      required: ['comment', 'task', 'instruction'],
+      additionalProperties: false,
     },
     list: { type: 'array', item: optionItemSchema },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'list'],
+  additionalProperties: false,
 };
 
 // text list
@@ -48,9 +54,13 @@ const textListSchema = {
         comment: { type: 'string' },
         task: { type: 'string' },
       },
+      required: ['comment', 'task'],
+      additionalProperties: false,
     },
     list: { type: 'array', item: htmlElementSchema },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'list'],
+  additionalProperties: false,
 };
 
 module.exports = { optionListSchema, textListSchema };

@@ -1,14 +1,15 @@
 const Validator = require('jsonschema').Validator;
 const v = new Validator();
+const instance1 = require('./config/c_1.json');
 const instance2 = require('./config/c_2.json');
 const questionnaireSchema =
   require('./questionnaireSchema').questionnaireSchema;
 
-// test('questionnaire 正确测试1', () => {
-//   expect(v.validate(instance2, questionnaireSchema).errors.length > 0).toBe(
-//     true
-//   );
-// });
+test('questionnaire 正确测试1', () => {
+  expect(v.validate(instance1, questionnaireSchema).errors.length === 0).toBe(
+    true
+  );
+});
 
 test('questionnaire 错误测试1', () => {
   expect(v.validate(instance2, questionnaireSchema).errors.length > 0).toBe(
@@ -16,4 +17,4 @@ test('questionnaire 错误测试1', () => {
   );
 });
 
-// console.log(v.validate(instance2, questionnaireSchema));
+// console.log(v.validate(instance1, questionnaireSchema));

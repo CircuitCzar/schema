@@ -1,0 +1,2528 @@
+{
+  "id": "01859f8d-ff53-9d0e-49d4-17396e38a5ca",
+  "kind": "Questionnaire",
+  "survey_name": "DSFDADFD",
+  "survey_note": null,
+  "list": [
+    {
+      "id": "1fb11c36-efca-49a9-b18f-8da1b047835d",
+      "kind": "QuestionNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "4cec8092-d1ad-4451-8997-df9f9718a6bf",
+          "data": {
+            "html": "<div><span></span></div>"
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "N1",
+        "text": {
+          "ZH-CN": {
+            "id": "a84178b3-e3c9-480d-a7dd-47ce11067b7d",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "zh-cn",
+              "list": {
+                "id": "2e03819e-3aba-473a-bbe6-82843abca216",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "d31c851f-c972-4902-9edf-1b871bfcf9f9",
+                    "data": {
+                      "html": "<div style=\"display: inline-block\">"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "0db812b3-6e6c-4f12-a9e1-b0792269c287",
+                    "data": {
+                      "html": "<div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "e836b8c8-7378-4925-a724-7340a0c9e8d9",
+                    "data": {
+                      "html": "<span></span>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "bb5444bd-74f8-44a2-b669-e72afaecc083",
+                    "data": {
+                      "html": "</div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "25c79bce-eee4-488d-a37e-08633e7a78aa",
+                    "data": {
+                      "html": "</div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          }
+        },
+        "type": "required",
+        "content": {
+          "id": "4a87cb75-a70d-4925-a943-d595b3437032",
+          "kind": "QuestionContent",
+          "meta": {
+            "grouped": [
+              {
+                "active": true,
+                "members": {},
+                "randomized": {
+                  "type": "auto",
+                  "order": {
+                    "script": "",
+                    "predefined": [],
+                    "recordedFormat": ""
+                  },
+                  "active": false,
+                  "options": {},
+                  "fixedPositionFor": {}
+                }
+              },
+              {
+                "active": false,
+                "members": {},
+                "randomized": {
+                  "type": "auto",
+                  "order": {
+                    "script": "",
+                    "predefined": [],
+                    "recordedFormat": ""
+                  },
+                  "active": false,
+                  "options": {},
+                  "fixedPositionFor": {}
+                }
+              }
+            ],
+            "extraData": {
+              "oe": {
+                "216bbe0b-5ffd-4866-8350-c3d896ec342c": {
+                  "code": "34454",
+                  "placeHolder": "DFDFDF"
+                },
+                "b8c2a21e-00b3-4d02-b63e-57432154f79d": {
+                  "code": "WE",
+                  "placeHolder": "DFDFDF"
+                }
+              }
+            },
+            "randomized": [
+              {
+                "type": "auto",
+                "order": {
+                  "script": "",
+                  "predefined": [],
+                  "recordedFormat": ""
+                },
+                "active": false,
+                "options": {},
+                "fixedPositionFor": {}
+              },
+              {
+                "type": "auto",
+                "order": {
+                  "script": "",
+                  "predefined": [],
+                  "recordedFormat": ""
+                },
+                "active": false,
+                "options": {},
+                "fixedPositionFor": {}
+              }
+            ]
+          },
+          "editor": null,
+          "content": {
+            "type": "Single",
+            "options": [
+              [
+                {
+                  "id": "216bbe0b-5ffd-4866-8350-c3d896ec342c",
+                  "data": {
+                    "code": "0",
+                    "text": {
+                      "ZH-CN": {
+                        "id": "0ea37a1f-2188-44a6-b9e8-03a2b3b7c67a",
+                        "kind": "TextContent",
+                        "meta": null,
+                        "editor": {
+                          "comment": ""
+                        },
+                        "content": {
+                          "lan": "ZH-CN",
+                          "list": {
+                            "id": "4cc27845-d34e-43da-a9ed-a3ffca424ad0",
+                            "kind": "TextList",
+                            "list": [
+                              {
+                                "id": "b94d0196-c28d-4163-ac23-4f60807ce72a",
+                                "data": {
+                                  "html": "<div style=\"display: inline-block\">"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "26eb28c2-9e69-4437-9f5e-80ed7774d9f4",
+                                "data": {
+                                  "html": "<div>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "ff46da57-b865-4cab-80e9-810cf82fa372",
+                                "data": {
+                                  "html": "<span>A1</span>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "0d7d638d-e549-4369-9679-2a46e23b9013",
+                                "data": {
+                                  "html": "</div>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "fbc4f8de-1729-45bd-b95b-be8d3219e2e0",
+                                "data": {
+                                  "html": "</div>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              }
+                            ],
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          "type": "String"
+                        }
+                      }
+                    }
+                  },
+                  "kind": "OptionItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": "",
+                    "instruction": {
+                      "id": "509e4d25-2dba-4175-9078-48d01559e5cb",
+                      "data": {
+                        "html": ""
+                      },
+                      "kind": "HtmlItem",
+                      "meta": null,
+                      "editor": {
+                        "task": "",
+                        "comment": ""
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "436de439-8211-4e26-b45d-984d756672a8",
+                  "data": {
+                    "code": "1",
+                    "text": {
+                      "ZH-CN": {
+                        "id": "ceb3a5cd-2a26-4bbb-b263-c27510e6521d",
+                        "kind": "TextContent",
+                        "meta": null,
+                        "editor": {
+                          "comment": ""
+                        },
+                        "content": {
+                          "lan": "ZH-CN",
+                          "list": {
+                            "id": "521754ad-84c5-4ac7-b539-85e3e29579a5",
+                            "kind": "TextList",
+                            "list": [
+                              {
+                                "id": "adf32cb7-161a-4b5a-b731-21cfcbbed943",
+                                "data": {
+                                  "html": "<div style=\"display: inline-block\">"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "d6f3c0f4-7348-481a-b098-efbc01851777",
+                                "data": {
+                                  "html": "<div>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "0e95922f-c3a0-4064-84ce-693e8682f995",
+                                "data": {
+                                  "html": "<span>A2</span>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "50fb53a9-6208-4f1c-b4be-01464811d415",
+                                "data": {
+                                  "html": "</div>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "ec84be37-5f52-4001-b143-14b3397c1da3",
+                                "data": {
+                                  "html": "</div>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              }
+                            ],
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          "type": "String"
+                        }
+                      }
+                    }
+                  },
+                  "kind": "OptionItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": "",
+                    "instruction": {
+                      "id": "d812f611-4c9c-4793-a106-59d23e714617",
+                      "data": {
+                        "html": ""
+                      },
+                      "kind": "HtmlItem",
+                      "meta": null,
+                      "editor": {
+                        "task": "",
+                        "comment": ""
+                      }
+                    }
+                  }
+                }
+              ],
+              [
+                {
+                  "id": "b8c2a21e-00b3-4d02-b63e-57432154f79d",
+                  "data": {
+                    "code": "0",
+                    "text": {
+                      "ZH-CN": {
+                        "id": "ed48c1b5-c4b4-45c2-b2c0-122f1916bdef",
+                        "kind": "TextContent",
+                        "meta": null,
+                        "editor": {
+                          "comment": ""
+                        },
+                        "content": {
+                          "lan": "ZH-CN",
+                          "list": {
+                            "id": "9960d27d-a091-49c4-868d-026b4ec318c9",
+                            "kind": "TextList",
+                            "list": [
+                              {
+                                "id": "58f27850-4607-41fb-b734-f818edfa7201",
+                                "data": {
+                                  "html": "<div style=\"display: inline-block\">"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "47d9c651-593f-4457-b083-0c7aa397ec22",
+                                "data": {
+                                  "html": "<div>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "f43045a4-3453-471d-bd14-3438912823c1",
+                                "data": {
+                                  "html": "<span>B1</span>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "beaf0095-fc7b-41e6-a0c4-9ca6cb03b028",
+                                "data": {
+                                  "html": "</div>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              },
+                              {
+                                "id": "eb230138-9d6d-470f-ad64-4e1cf1b83f15",
+                                "data": {
+                                  "html": "</div>"
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              }
+                            ],
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          "type": "String"
+                        }
+                      }
+                    }
+                  },
+                  "kind": "OptionItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": "",
+                    "instruction": {
+                      "id": "72a61b74-339f-4d0c-9221-38e9bbdd7bdc",
+                      "data": {
+                        "html": ""
+                      },
+                      "kind": "HtmlItem",
+                      "meta": null,
+                      "editor": {
+                        "task": "",
+                        "comment": ""
+                      }
+                    }
+                  }
+                }
+              ]
+            ],
+            "optionsDisplay": {}
+          }
+        },
+        "condition": {
+          "true": {
+            "id": "79fc1cf9-9e98-45d2-b0ab-926681ba82a4",
+            "kind": "ConditionContent",
+            "meta": null,
+            "editor": null,
+            "content": {
+              "type": "IS",
+              "condition": [
+                {
+                  "id": "da5b7e80-5bbf-4fad-87ec-9ff44f13fa20",
+                  "kind": "ConditionContent",
+                  "meta": null,
+                  "editor": null,
+                  "content": {
+                    "type": "IS",
+                    "condition": [
+                      {
+                        "id": "095630a3-a831-4dd9-bb38-c9cdd025a0ac",
+                        "kind": "ConditionContent",
+                        "meta": null,
+                        "editor": null,
+                        "content": {
+                          "type": "AND",
+                          "condition": {
+                            "id": "458a7b2f-a272-4ef0-8fe6-188bac589db0",
+                            "kind": "ScriptContent",
+                            "meta": null,
+                            "editor": {
+                              "instruction": {
+                                "id": "fede432d-b7eb-4c76-8f44-2823d7bd7555",
+                                "data": {
+                                  "html": ""
+                                },
+                                "kind": "HtmlItem",
+                                "meta": null,
+                                "editor": {
+                                  "task": "",
+                                  "comment": ""
+                                }
+                              }
+                            },
+                            "content": {
+                              "type": "Condition",
+                              "execution": {
+                                "id": "a8b6dbb4-f684-4a68-889c-630d3f2c1c83",
+                                "return": {
+                                  "value": ""
+                                },
+                                "arguments": {
+                                  "options": {
+                                    "value": ["No options here"]
+                                  },
+                                  "question": {
+                                    "value": "N9"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "false": null
+        },
+        "appearance": {
+          "plugin": {
+            "default": {
+              "name": "clickBox_2D_single_gameStyle",
+              "settings": {
+                "id": "911dd2d3-f9fc-2e63-292a-7bc26af255a1",
+                "type": "MAP",
+                "value": {
+                  "question": {
+                    "type": "STRING",
+                    "value": "",
+                    "description": " The question text can be modified by the survey owner."
+                  },
+                  "instruction": {
+                    "type": "STRING",
+                    "value": "",
+                    "description": " The instructions to the question can be modified by the survey owner. It's recommended that the existing instructions are included in the customised instructions."
+                  },
+                  "options": {
+                    "type": "ARRAY",
+                    "value": [
+                      {
+                        "type": "ARRAY",
+                        "value": [
+                          {
+                            "type": "MAP",
+                            "value": {
+                              "code": {
+                                "type": "STRING",
+                                "value": "0"
+                              },
+                              "content": {
+                                "type": "STRING",
+                                "value": "A1"
+                              }
+                            }
+                          },
+                          {
+                            "type": "MAP",
+                            "value": {
+                              "code": {
+                                "type": "STRING",
+                                "value": "1"
+                              },
+                              "content": {
+                                "type": "STRING",
+                                "value": "A2"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "ARRAY",
+                        "value": [
+                          {
+                            "type": "MAP",
+                            "value": {
+                              "code": {
+                                "type": "STRING",
+                                "value": "0"
+                              },
+                              "content": {
+                                "type": "STRING",
+                                "value": "B1"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "description": " For the purposes of reproducing a bug"
+                  }
+                },
+                "hint": ""
+              },
+              "lan": {
+                "ZH-CN": {
+                  "type": "MAP",
+                  "value": {
+                    "question": {
+                      "type": "STRING",
+                      "value": "",
+                      "description": " The question text can be modified by the survey owner."
+                    },
+                    "instruction": {
+                      "type": "STRING",
+                      "value": "",
+                      "description": " The instructions to the question can be modified by the survey owner. It's recommended that the existing instructions are included in the customised instructions."
+                    },
+                    "options": {
+                      "type": "ARRAY",
+                      "value": [
+                        {
+                          "type": "ARRAY",
+                          "value": [
+                            {
+                              "type": "MAP",
+                              "value": {
+                                "code": {
+                                  "type": "STRING",
+                                  "value": "0"
+                                },
+                                "content": {
+                                  "type": "STRING",
+                                  "value": "A1"
+                                }
+                              }
+                            },
+                            {
+                              "type": "MAP",
+                              "value": {
+                                "code": {
+                                  "type": "STRING",
+                                  "value": "1"
+                                },
+                                "content": {
+                                  "type": "STRING",
+                                  "value": "A2"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "ARRAY",
+                          "value": [
+                            {
+                              "type": "MAP",
+                              "value": {
+                                "code": {
+                                  "type": "STRING",
+                                  "value": "0"
+                                },
+                                "content": {
+                                  "type": "STRING",
+                                  "value": "B1"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "description": " For the purposes of reproducing a bug"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "instruction": {
+          "ZH-CN": {
+            "id": "87209bf7-5c55-4ede-924a-95df4f2e18d4",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "zh-cn",
+              "list": {
+                "id": "544036b6-ab8e-4af2-ac95-8dfd165d32a3",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "8c18367a-8501-4b84-9063-b292bbb03f07",
+                    "data": {
+                      "html": "<div style=\"display: inline-block\">"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "824de8cd-0a7c-4474-a02f-d320899e7540",
+                    "data": {
+                      "html": "<div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "04d095fc-655a-443b-a0a6-86b3275d2e67",
+                    "data": {
+                      "html": "<span></span>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "b4acd653-a338-4631-b38e-5a06d5f24fed",
+                    "data": {
+                      "html": "</div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "a7647881-9b3f-445c-8389-929d5d47bf65",
+                    "data": {
+                      "html": "</div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "46290095-3737-4729-af70-e15eb3f7c0f0",
+      "kind": "QuestionNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "da75de22-0338-4938-a0f4-959b9539e4a5",
+          "data": {
+            "html": ""
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "N9",
+        "text": {
+          "ZH-CN": {
+            "id": "c60d8eef-d711-463d-bf4b-e7595cb0132e",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "zh-cn",
+              "list": {
+                "id": "3ba9eddb-fd93-4e2f-9258-f52c38bf2686",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "275b8a09-3c1b-4db7-b71e-9e388d3bd5ba",
+                    "data": {
+                      "html": "<div style=\"display: inline-block\">"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "3c8c75f0-990c-4254-8581-a6b62b33886a",
+                    "data": {
+                      "html": "<div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "9f6dc36f-ff79-405a-ba8d-08e348b0b7c4",
+                    "data": {
+                      "html": "<span></span>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "046df329-7041-4643-9617-efdb6d08c228",
+                    "data": {
+                      "html": "</div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "2ab90aa4-7bd6-44da-b51c-feae073728a2",
+                    "data": {
+                      "html": "</div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          }
+        },
+        "type": "required",
+        "content": {
+          "id": "6fb59c46-4e1e-4292-b61b-d85f06448ed0",
+          "kind": "QuestionContent",
+          "meta": {
+            "grouped": [
+              {
+                "active": false,
+                "members": {},
+                "randomized": {
+                  "type": "auto",
+                  "order": {
+                    "script": "",
+                    "predefined": [],
+                    "recordedFormat": ""
+                  },
+                  "active": false,
+                  "options": {},
+                  "fixedPositionFor": {}
+                }
+              },
+              {
+                "active": false,
+                "members": {},
+                "randomized": {
+                  "type": "auto",
+                  "order": {
+                    "script": "",
+                    "predefined": [],
+                    "recordedFormat": ""
+                  },
+                  "active": false,
+                  "options": {},
+                  "fixedPositionFor": {}
+                }
+              }
+            ],
+            "extraData": {
+              "oe": {}
+            },
+            "randomized": [
+              {
+                "type": "auto",
+                "order": {
+                  "script": "",
+                  "predefined": [],
+                  "recordedFormat": ""
+                },
+                "active": false,
+                "options": {},
+                "fixedPositionFor": {}
+              },
+              {
+                "type": "auto",
+                "order": {
+                  "script": "",
+                  "predefined": [],
+                  "recordedFormat": ""
+                },
+                "active": false,
+                "options": {},
+                "fixedPositionFor": {}
+              }
+            ]
+          },
+          "editor": null,
+          "content": {
+            "type": "OpenEnd",
+            "options": [[], []],
+            "optionsDisplay": {}
+          }
+        },
+        "condition": {
+          "true": true,
+          "false": null
+        },
+        "appearance": {
+          "plugin": {
+            "default": {
+              "lan": {
+                "en": null
+              },
+              "name": "",
+              "settings": null
+            }
+          }
+        },
+        "instruction": {
+          "ZH-CN": {
+            "id": "8e40c1b7-40d2-405f-a677-7f8fae56af3a",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "zh-cn",
+              "list": {
+                "id": "9a05c536-6fc5-4285-bad6-1ec267210f4d",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "a0a2b575-738f-4598-9099-554ea06ca547",
+                    "data": {
+                      "html": ""
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "2c808bd6-1e9e-4331-8b31-d7fb37f1227c",
+      "kind": "BlockNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "6c54d2f2-21c4-438c-a317-90cc4333b241",
+          "data": {
+            "html": ""
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "N2",
+        "content": {
+          "id": "5cca511d-5a57-4690-95f7-ece62d38c7c8",
+          "kind": "BlockContent",
+          "meta": null,
+          "editor": null,
+          "content": {
+            "list": [],
+            "type": "Block"
+          }
+        },
+        "condition": {
+          "true": null,
+          "false": null
+        }
+      }
+    },
+    {
+      "id": "2f639ac1-ad3d-40ef-9f8d-95cffe6ab136",
+      "kind": "LoopNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "73b12693-9ca0-4ca2-a0de-07a65b5695b9",
+          "data": {
+            "html": ""
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "N3",
+        "content": {
+          "id": "2bd94bdd-9c83-43ee-838f-99eb18d341c2",
+          "kind": "LoopContent",
+          "meta": null,
+          "editor": null,
+          "content": {
+            "list": [],
+            "type": "Loop",
+            "logics": [],
+            "options": {
+              "id": "e94c7877-d80f-4f55-9428-9d5efa766d48",
+              "kind": "OptionList",
+              "list": [],
+              "meta": {
+                "link": null,
+                "name": ""
+              },
+              "editor": {
+                "task": "",
+                "comment": "",
+                "instruction": {
+                  "id": "38f56613-00c8-4bba-8bae-d9bd2360e199",
+                  "data": {
+                    "html": ""
+                  },
+                  "kind": "HtmlItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": ""
+                  }
+                }
+              }
+            },
+            "loopItemDisplay": {}
+          }
+        },
+        "condition": {
+          "true": null,
+          "false": null
+        }
+      }
+    },
+    {
+      "id": "ca959add-b942-42fa-9865-8132edf50160",
+      "kind": "ExecutionNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "25225f1c-6120-46cd-830a-501ac0469d9d",
+          "data": {
+            "html": ""
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "N4",
+        "content": {
+          "id": "f0d2c098-30f9-4e9f-ad05-60e069f2a190",
+          "kind": "ExecutionContent",
+          "meta": null,
+          "editor": null,
+          "content": {
+            "type": "Execution",
+            "executions": []
+          }
+        },
+        "condition": {
+          "true": null,
+          "false": null
+        }
+      }
+    },
+    {
+      "id": "eef5db54-080c-4a20-82dd-454b9590ff88",
+      "kind": "MarkNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "a2c6b433-fc87-4f8d-ae97-dfa09e32da53",
+          "data": {
+            "html": ""
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "N5",
+        "content": {
+          "id": "33b71e25-e22d-42d9-9ae3-43f370883a67",
+          "kind": "LoopContent",
+          "meta": null,
+          "editor": null,
+          "content": {
+            "type": "Mark",
+            "logics": [],
+            "markers": []
+          }
+        },
+        "condition": {
+          "true": null,
+          "false": null
+        }
+      }
+    },
+    {
+      "id": "1599e944-83aa-4b14-a197-c5e104cb391e",
+      "kind": "QuotaNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "09e0e027-9b9b-401c-aaee-a2be55f5d2b0",
+          "data": {
+            "html": "<div><span></span></div>"
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "N6",
+        "content": {
+          "id": "e1d5675b-f3f7-474b-8df6-95314b9b2620",
+          "kind": "QuotaContent",
+          "meta": null,
+          "editor": null,
+          "content": {
+            "type": "Quota",
+            "logics": [],
+            "quotas": {
+              "79bac19f-97e1-401a-9a22-bd80e5f0be99": {
+                "number": 2
+              }
+            },
+            "markers": [
+              {
+                "id": "79bac19f-97e1-401a-9a22-bd80e5f0be99",
+                "name": "",
+                "go_to_node": null
+              },
+              {
+                "id": "71bd20a2-2da4-4ef3-88bd-aecdef6ea3cb",
+                "name": "",
+                "go_to_node": null
+              }
+            ]
+          }
+        },
+        "condition": {
+          "true": null,
+          "false": null
+        }
+      }
+    },
+    {
+      "id": "c640bfcd-1026-4725-9c03-e8efd2388794",
+      "kind": "DisplayNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "cee13f1c-031b-4b12-9573-925a1195b064",
+          "data": {
+            "html": "<div><span></span></div>"
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "N7",
+        "text": {
+          "ZH-CN": {
+            "id": "4853e064-3218-4818-96bf-445eaaf13df8",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "zh-cn",
+              "list": {
+                "id": "d78abaac-7584-493d-8038-bc0c98957ed8",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "0cd04331-364d-4d36-a115-e4e3f66aea10",
+                    "data": {
+                      "html": ""
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          },
+          "default": {
+            "id": "165f2e41-1f2f-4993-86bb-dfa5c8b4109d",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "en",
+              "list": {
+                "id": "e901e85d-fed5-4c75-8331-f525b6c0d777",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "e53a58e9-a2d8-4cb5-86d7-dee39732a43c",
+                    "data": {
+                      "html": ""
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          }
+        },
+        "condition": {
+          "true": null,
+          "false": null
+        },
+        "appearance": {
+          "plugin": {
+            "default": {
+              "lan": {
+                "en": null
+              },
+              "name": "",
+              "settings": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "5787dfa5-8429-41ef-b12c-d28d079e160c",
+      "kind": "ExitNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "24738981-3640-4b33-9320-12dff849ae7b",
+          "data": {
+            "html": ""
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "N8",
+        "text": {
+          "ZH-CN": {
+            "id": "d6f9bf9a-34ec-43ff-97d6-f3e21d2b0924",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "zh-cn",
+              "list": {
+                "id": "85dff9b1-05f6-4031-bb3b-0f01c3eabcb1",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "ada73e36-508e-4860-b52d-65aa299ddf7e",
+                    "data": {
+                      "html": "<div style=\"display: inline-block\">"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "dd9bd2ff-7b31-4b6e-b205-6a5fa6eac128",
+                    "data": {
+                      "html": "<div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "1e37e65d-02c9-4b43-9378-0313381cebed",
+                    "data": {
+                      "html": "<span></span>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "2a0a2036-b252-4486-bb13-fb86c5564e81",
+                    "data": {
+                      "html": "</div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  },
+                  {
+                    "id": "1e8e3d2b-2326-442e-bd33-ccf51a7c47f4",
+                    "data": {
+                      "html": "</div>"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          },
+          "default": {
+            "id": "48d10909-49b6-4e3f-b2e7-5dd68bea25e9",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "en",
+              "list": {
+                "id": "6f8daa88-212f-4988-be4d-f43e904aa650",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "a1e462d4-d382-4410-a8e6-694f22b73458",
+                    "data": {
+                      "html": ""
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          }
+        },
+        "condition": {
+          "true": null,
+          "false": null
+        },
+        "setStatus": "Complete"
+      }
+    },
+    {
+      "id": "de9d7a40-c1ee-4b39-903b-c10d616379ab",
+      "kind": "ExitNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "65fcefc0-4a4c-4793-adde-9cfa60df900d",
+          "data": {
+            "html": "This is a default exit node, the trigger condition is “complete”, if you don't add an “Exit node” on your hand, the node will help you to Exit. You can't delete or modify this node, and you won't see it in the UI interface, but if you check the JSON of the configuration, you will see this node."
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "default_complete",
+        "text": {
+          "EN-US": {
+            "id": "0ea3afb5-e1ff-43a1-b49b-6973d4ffb2e4",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "EN-US",
+              "list": {
+                "id": "1ec2473b-9dc0-4e18-ab02-4c49de2902da",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "0f2891f9-9290-4ceb-b50e-d908eca560a4",
+                    "data": {
+                      "html": "Thank you for your time to complete this questionnaire!"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          },
+          "ZH-CN": {
+            "id": "265332f2-c2b0-4c97-b901-71fce87dec5d",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "ZH-CN",
+              "list": {
+                "id": "20c251df-fb32-46b8-9452-2b1691887136",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "bd4d12d3-7f86-4fd9-b1e6-345cbbd58d55",
+                    "data": {
+                      "html": "感谢您抽出宝贵时间完成此次问卷调查！"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          }
+        },
+        "condition": {
+          "true": null,
+          "false": null
+        },
+        "setStatus": "Complete"
+      }
+    },
+    {
+      "id": "d21a9d6f-57ed-4c08-9d13-d6d7e209a693",
+      "kind": "ExitNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "97e4dcd8-373c-45df-a774-437bba88f491",
+          "data": {
+            "html": "This is a default exit node, the trigger condition is “Quota Full”, if you don't add an “Exit node” on your hand, the node will help you to Exit. You can't delete or modify this node, and you won't see it in the UI interface, but if you check the JSON of the configuration, you will see this node."
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "default_quota_full",
+        "text": {
+          "EN-US": {
+            "id": "cdf88fa8-93a9-46ee-a489-3d57305a0487",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "EN-US",
+              "list": {
+                "id": "74b6c31d-54a8-4d5e-a6b0-3d585af53908",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "504ab28b-1d62-4581-8cf0-60d9f283e1cd",
+                    "data": {
+                      "html": "Thank you for your time to complete this questionnaire!"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          },
+          "ZH-CN": {
+            "id": "fa0c0f27-4f37-4d5b-8a36-f9388414fd33",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "ZH-CN",
+              "list": {
+                "id": "da179fb2-3b1a-4991-844d-ccf8d445c3ff",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "8ddfe0f1-4035-4290-a6fb-1d1e589ec1c4",
+                    "data": {
+                      "html": "感谢您抽出宝贵时间完成此次问卷调查！"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          }
+        },
+        "condition": {
+          "true": null,
+          "false": null
+        },
+        "setStatus": "Quota Full"
+      }
+    },
+    {
+      "id": "3b4773dd-7a1f-4258-9bef-095505c446de",
+      "kind": "ExitNode",
+      "meta": {
+        "node_label": ""
+      },
+      "editor": {
+        "task": "",
+        "comment": "",
+        "instruction": {
+          "id": "0bda9cfe-08e1-47c7-b78e-7ed744e44dae",
+          "data": {
+            "html": "This is a default exit node, the trigger condition is “Screened Out”, if you don't add an “Exit node” on your hand, the node will help you to Exit. You can't delete or modify this node, and you won't see it in the UI interface, but if you check the JSON of the configuration, you will see this node."
+          },
+          "kind": "HtmlItem",
+          "meta": null,
+          "editor": {
+            "task": "",
+            "comment": ""
+          }
+        }
+      },
+      "structure": {
+        "code": "default_screened_out",
+        "text": {
+          "EN-US": {
+            "id": "7689e749-83c1-4a91-88d0-66295253b08a",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "EN-US",
+              "list": {
+                "id": "26763d2b-22f9-45ee-88a2-cc0f84e604af",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "3eba5b39-bdf6-4486-816b-5294c2cd816b",
+                    "data": {
+                      "html": "Thank you for your time to complete this questionnaire!"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          },
+          "ZH-CN": {
+            "id": "e587cd1f-7f92-4d2a-a478-a05d6cff0326",
+            "kind": "TextContent",
+            "meta": null,
+            "editor": {
+              "comment": ""
+            },
+            "content": {
+              "lan": "ZH-CN",
+              "list": {
+                "id": "e7b51f2f-0afe-43ce-93d9-b64c2e38f421",
+                "kind": "TextList",
+                "list": [
+                  {
+                    "id": "925340cb-5e40-4322-95ce-67b697a8eb3c",
+                    "data": {
+                      "html": "感谢您抽出宝贵时间完成此次问卷调查！"
+                    },
+                    "kind": "HtmlItem",
+                    "meta": null,
+                    "editor": {
+                      "task": "",
+                      "comment": ""
+                    }
+                  }
+                ],
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              "type": "String"
+            }
+          }
+        },
+        "condition": {
+          "true": null,
+          "false": null
+        },
+        "setStatus": "Screened Out"
+      }
+    }
+  ],
+  "meta": {
+    "lan": ["ZH-CN"],
+    "scripts": {},
+    "defaultLan": "ZH-CN",
+    "optionLists": {},
+    "builtin_scripts": {
+      "068e8e6d-6ab7-4867-8afe-dc437f4e7e26": {
+        "data": {
+          "id": "068e8e6d-6ab7-4867-8afe-dc437f4e7e26",
+          "data": {
+            "function": "/**\n * check answers in the data collection is not same as the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @returns true/false\n */\nfunction findAnswersIsNotWithoutLoop(setQuestion, setAnswer) {\n    // get answers in the data collection\n    const getAnswer = this.S.getData(setQuestion);\n    if (!getAnswer) return false;\n\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // get all option codes in the question and remove additional open-end\n    const getKeys = Object.keys(getAnswer).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // lengths should be same\n    if (setKeys.length !== getKeys.length) return false;\n    // all answers should be exactly not same\n    setKeys.forEach((key) => {\n        if (setAnswer[key] === getAnswer[key]) {\n            // one of the answer is same same then set flag to false\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "setQuestion",
+                "type": "string",
+                "instruction": "targe question"
+              },
+              {
+                "name": "setAnswer",
+                "type": "object",
+                "instruction": "set answers"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+            },
+            "information": "check answers in the data collection is not same as the set answers",
+            "link": "0.0.2"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "findAnswersIsNotWithoutLoop"
+          },
+          "editor": null
+        },
+        "name": "findAnswersIsNotWithoutLoop"
+      },
+      "23d7f0ef-1bbe-45fe-8b95-cf81e6073a6f": {
+        "data": {
+          "id": "23d7f0ef-1bbe-45fe-8b95-cf81e6073a6f",
+          "data": {
+            "function": "/**\n * check answers in the data collection doesn't contain the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @returns true/false\n */\nfunction findAnswersDoesNotContainsWithoutLoop(setQuestion, setAnswer) {\n    // get answers in the data collection\n    const getAnswer = this.S.getData(setQuestion);\n    if (!getAnswer) return false;\n\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // set return flag\n    var flag = true;\n\n    // all set answers should not be in the data collection answers\n    setKeys\n        .filter((key) => {\n            if (setAnswer[key] == '0') return key;\n        })\n        .forEach((key) => {\n            if (setAnswer[key] !== getAnswer[key]) {\n                flag = false;\n            }\n        });\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "setQuestion",
+                "type": "string",
+                "instruction": "targe question"
+              },
+              {
+                "name": "setAnswer",
+                "type": "object",
+                "instruction": "set answers"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+            },
+            "information": "check answers in the data collection doesn't contain the set answers",
+            "link": "0.0.3"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "findAnswersDoesNotContainsWithoutLoop"
+          },
+          "editor": null
+        },
+        "name": "findAnswersDoesNotContainsWithoutLoop"
+      },
+      "2816a41d-f7bd-4f29-b6e4-47c00e37ea77": {
+        "data": {
+          "id": "2816a41d-f7bd-4f29-b6e4-47c00e37ea77",
+          "data": {
+            "function": "/**\n * check target question is answered in the data collection or not\n * @param {string} question target question\n * @param {'single'|'multi'|'openEnd'} type target question type\n */\nfunction checkAnsweredWithoutLoop(question, type) {\n    // get answers in the data collection\n    const answers = this.S.getData(question);\n    if (!answers) return false;\n    // get all option codes in the question and remove additional open-end\n    const optionCode = Object.keys(answers).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // check if the question is answered or not\n    switch (type) {\n        case 'single':\n            {\n                optionCode.forEach((code) => {\n                    // single question is not answered\n                    if (answers[code] === null) {\n                        flag = false;\n                    }\n                });\n            }\n        case 'multi':\n            {\n                // set default result to false\n                flag = false;\n                optionCode.forEach((code) => {\n                    // multi question is not answered\n                    if (answers[code] !== 0) {\n                        flag = true;\n                    }\n                });\n            }\n        case 'openEnd':\n            {\n                // set default result to false\n                flag = false;\n                optionCode.forEach((code) => {\n                    // multi question is not answered\n                    if (answers[code] !== null) {\n                        flag = true;\n                    }\n                });\n            }\n    }\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "question",
+                "type": "string",
+                "instruction": "target question"
+              },
+              {
+                "name": "type",
+                "type": "string",
+                "instruction": "target question type"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "If the condition is satisfied, the function will return true, otherwise, false."
+            },
+            "information": "check target question is answered in the data collection or not",
+            "link": "0.0.3"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "checkAnsweredWithoutLoop"
+          },
+          "editor": null
+        },
+        "name": "checkAnsweredWithoutLoop"
+      },
+      "60da4933-bf77-4e6d-8a79-7ac3f13ca244": {
+        "data": {
+          "id": "60da4933-bf77-4e6d-8a79-7ac3f13ca244",
+          "data": {
+            "function": "/**\n * check answers in the data collection is same as the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @param {Array<string>} loopItems loopItems\n * @returns true/false\n */\nfunction findAnswersIsWithLoop(setQuestion, setAnswer, loopItems) {\n    // get answers in the data collection with loopItems\n    const getAnswer = this.S.getData(`${setQuestion}_${loopItems.join('_')}`);\n    if (!getAnswer) return false;\n\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // get all option codes in the question and remove additional open-end\n    const getKeys = Object.keys(getAnswer).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // lengths should be same\n    if (setKeys.length !== getKeys.length) return false;\n    // all answers should be exactly same\n    setKeys.forEach((key) => {\n        if (setAnswer[key] !== getAnswer[key]) {\n            // one of the answer is not same then set flag to false\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "setQuestion",
+                "type": "string",
+                "instruction": "targe question"
+              },
+              {
+                "name": "setAnswer",
+                "type": "object",
+                "instruction": "set answers"
+              },
+              {
+                "name": "loopItems",
+                "type": "object",
+                "instruction": "loopItems"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+            },
+            "information": "check answers in the data collection is same as the set answers",
+            "link": "0.0.3"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "findAnswersIsWithLoop"
+          },
+          "editor": null
+        },
+        "name": "findAnswersIsWithLoop"
+      },
+      "84f7c45e-7664-4e32-9631-842af3f47175": {
+        "data": {
+          "id": "84f7c45e-7664-4e32-9631-842af3f47175",
+          "data": {
+            "function": "/**\n * check answers in the data collection doesn't contain the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @param {Array<string>} loopItems loopItems\n * @returns true/false\n */\nfunction findAnswersDoesNotContainsWithLoop(setQuestion, setAnswer, loopItems) {\n    // get answers in the data collection with loopItems\n    const getAnswer = this.S.getData(`${setQuestion}_${loopItems.join('_')}`);\n    if (!getAnswer) return false;\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // set return flag\n    var flag = true;\n\n    // all set answers should not be in the data collection answers\n    setKeys\n        .filter((key) => {\n            if (setAnswer[key] == '0') return key;\n        })\n        .forEach((key) => {\n            if (setAnswer[key] !== getAnswer[key]) {\n                flag = false;\n            }\n        });\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "setQuestion",
+                "type": "string",
+                "instruction": "targe question"
+              },
+              {
+                "name": "setAnswer",
+                "type": "object",
+                "instruction": "set answers"
+              },
+              {
+                "name": "loopItems",
+                "type": "object",
+                "instruction": "loopItems"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+            },
+            "information": "check answers in the data collection doesn't contain the set answers",
+            "link": "0.0.4"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "findAnswersDoesNotContainsWithLoop"
+          },
+          "editor": null
+        },
+        "name": "findAnswersDoesNotContainsWithLoop"
+      },
+      "90213f64-f235-4872-8f77-4e5431a51448": {
+        "data": {
+          "id": "90213f64-f235-4872-8f77-4e5431a51448",
+          "data": {
+            "function": "/**\n * check target open-end question is answered with specific options or not with loopItem\n * @param {string} question target question\n * @param {Array<string>} options options supposed to be answered\n */\nfunction checkOpenEndAnsweredWithLoop(question, options, loopItems) {\n    // get answers in the data collection with loopItems\n    const answers = this.S.getData(`${question}_${loopItems.join('_')}`);\n    if (!answers) return false;\n    // set return flag\n    var flag = true;\n    // check if the question is answered or not\n    options.forEach((code) => {\n        // option is not answered\n        if (!answers[code]) {\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "question",
+                "type": "string",
+                "instruction": "target question"
+              },
+              {
+                "name": "options",
+                "type": "array",
+                "instruction": "options supposed to be answered"
+              },
+              {
+                "name": "loopItems",
+                "type": "object",
+                "instruction": "loopItems"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "If the condition is satisfied, the function will return true, otherwise, false."
+            },
+            "information": "check target open-end question is answered with specific options or not with loopItem",
+            "link": "0.0.6"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "checkOpenEndAnsweredWithLoop"
+          },
+          "editor": null
+        },
+        "name": "checkOpenEndAnsweredWithLoop"
+      },
+      "9f4e367d-08c8-47d1-9296-9e3e8ee1c11e": {
+        "data": {
+          "id": "9f4e367d-08c8-47d1-9296-9e3e8ee1c11e",
+          "data": {
+            "function": "/**\n * check answers in the data collection contains the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @returns true/false\n */\nfunction findAnswersContainsWithoutLoop(setQuestion, setAnswer) {\n    // get answers in the data collection\n    const getAnswer = this.S.getData(setQuestion);\n    if (!getAnswer) return false;\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // set return flag\n    var flag = true;\n\n    // all set answers should be same as the answer in the data collection\n    setKeys\n        .filter((key) => {\n            if (setAnswer[key] == '1') return key;\n        })\n        .forEach((key) => {\n            if (setAnswer[key] !== getAnswer[key]) {\n                flag = false;\n            }\n        });\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "setQuestion",
+                "type": "string",
+                "instruction": "targe question"
+              },
+              {
+                "name": "setAnswer",
+                "type": "object",
+                "instruction": "set answers"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+            },
+            "information": "check answers in the data collection contains the set answers",
+            "link": "0.0.3"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "findAnswersContainsWithoutLoop"
+          },
+          "editor": null
+        },
+        "name": "findAnswersContainsWithoutLoop"
+      },
+      "9f7e7c35-0d7c-41a7-a5f3-869521fa4852": {
+        "data": {
+          "id": "9f7e7c35-0d7c-41a7-a5f3-869521fa4852",
+          "data": {
+            "function": "function findAnswerInQuestion(setQuestion, setAnswer, operator) {\n    const getAnswer = this.S.getData(setQuestion);\n    if (!getAnswer) return false;\n    const setKeys = Object.keys(setAnswer);\n    const getKeys = Object.keys(getAnswer);\n    var flag = true;\n    switch (operator) {\n        case 'is':\n            {\n                if (setKeys.length !== getKeys.length) return false;\n                setKeys.forEach((key) => {\n                    if (setAnswer[key] !== getAnswer[key]) {\n                        flag = false;\n                    }\n                });\n                return flag;\n            }\n        case 'is not':\n            {\n                if (setKeys.length !== getKeys.length) return false;\n                setKeys.forEach((key) => {\n                    if (setAnswer[key] === getAnswer[key]) {\n                        flag = false;\n                    }\n                });\n                return flag;\n            }\n        case 'contains':\n            {\n                if (setKeys.length >= getKeys.length) return false;\n                setKeys.forEach((key) => {\n                    if (setAnswer[key] !== getAnswer[key]) {\n                        flag = false;\n                    }\n                });\n                return flag;\n            }\n        case \"doesn't contain\":\n            {\n                if (setKeys.length >= getKeys.length) return false;\n                setKeys.forEach((key) => {\n                    if (setAnswer[key] === getAnswer[key]) {\n                        flag = false;\n                    }\n                });\n                return flag;\n            }\n    }\n}",
+            "arguments": [
+              {
+                "name": "setQuestion",
+                "type": "string",
+                "instruction": "targe question"
+              },
+              {
+                "name": "setAnswer",
+                "type": "object",
+                "instruction": "expected answers"
+              },
+              {
+                "name": "operator",
+                "type": "string",
+                "instruction": "the relation between actual answers and expected answers"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+            },
+            "information": "",
+            "link": "0.0.4"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "findAnswerInQuestion"
+          },
+          "editor": null
+        },
+        "name": "findAnswerInQuestion"
+      },
+      "a31276c2-268c-49f8-93f7-6419da4016ac": {
+        "data": {
+          "id": "a31276c2-268c-49f8-93f7-6419da4016ac",
+          "data": {
+            "function": "/**\n * Get the current loopItem runs in a specific LoopNode\n * @param {string} loopNodeCode The code of the LoopNode which contains the target LoopItems\n */\nfunction fetchLoopItem(loopNodeCode) {\n    // return the current loopItem in the server of the specific LoopNode\n    return this.S.getCurrentLoopItemText(loopNodeCode);\n}",
+            "arguments": [
+              {
+                "name": "loopNodeCode",
+                "type": "string",
+                "instruction": "The code of the LoopNode which contains the target LoopItems"
+              }
+            ],
+            "return": {
+              "type": "string",
+              "instruction": "The current loopItem runs in the LoopNode"
+            },
+            "information": "Get the current loopItem runs in a specific LoopNode",
+            "link": "0.0.1"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "fetchLoopItem"
+          },
+          "editor": null
+        },
+        "name": "fetchLoopItem"
+      },
+      "a7caf532-dfcd-47c2-bead-2006a3299eb9": {
+        "data": {
+          "id": "a7caf532-dfcd-47c2-bead-2006a3299eb9",
+          "data": {
+            "function": "/**\n * check target question is answered in the data collection or not with loop\n * @param {string} question target question\n * @param {'single'|'multi'|'openEnd'} type target question type\n * @param {Array<string>} loopItems loopItems\n */\nfunction checkAnsweredWithLoop(question, type, loopItems) {\n    // get answers in the data collection with loop\n    const answers = this.S.getData(`${question}_${loopItems.join('_')}`);\n    if (!answers) return false;\n    // get all option codes in the question and remove additional open-end\n    const optionCode = Object.keys(answers).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // check if the question is answered or not\n    switch (type) {\n        case 'single':\n            {\n                optionCode.forEach((code) => {\n                    // single question is not answered\n                    if (answers[code] === null) {\n                        flag = false;\n                    }\n                });\n            }\n        case 'multi':\n            {\n                // set default result to false\n                flag = false;\n                optionCode.forEach((code) => {\n                    // multi question is not answered\n                    if (answers[code] !== 0) {\n                        flag = true;\n                    }\n                });\n            }\n        case 'openEnd':\n            {\n                // set default result to false\n                flag = false;\n                optionCode.forEach((code) => {\n                    // multi question is not answered\n                    if (answers[code] !== null) {\n                        flag = true;\n                    }\n                });\n            }\n    }\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "question",
+                "type": "string",
+                "instruction": "target question"
+              },
+              {
+                "name": "type",
+                "type": "string",
+                "instruction": "target question type"
+              },
+              {
+                "name": "loopItems",
+                "type": "object",
+                "instruction": "loopItems"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "If the condition is satisfied, the function will return true, otherwise, false."
+            },
+            "information": "check target question is answered in the data collection or not with loop",
+            "link": "0.0.3"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "checkAnsweredWithLoop"
+          },
+          "editor": null
+        },
+        "name": "checkAnsweredWithLoop"
+      },
+      "a8b6dbb4-f684-4a68-889c-630d3f2c1c83": {
+        "data": {
+          "id": "a8b6dbb4-f684-4a68-889c-630d3f2c1c83",
+          "data": {
+            "function": "/**\n * check target open-end question is answered with specific options or not\n * @param {string} question target question\n * @param {Array<string>} options options supposed to be answered\n */\nfunction checkOpenEndAnsweredWithoutLoop(question, options) {\n    // get answers in the data collection\n    const answers = this.S.getData(question);\n    if (!answers) return false;\n    // set return flag\n    var flag = true;\n    // check if the question is answered or not\n    options.forEach((code) => {\n        // option is not answered\n        if (!answers[code]) {\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "question",
+                "type": "string",
+                "instruction": "target question"
+              },
+              {
+                "name": "options",
+                "type": "array",
+                "instruction": "options supposed to be answered"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "If the condition is satisfied, the function will return true, otherwise, false."
+            },
+            "information": "check target open-end question is answered with specific options or not",
+            "link": "0.0.6"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "checkOpenEndAnsweredWithoutLoop"
+          },
+          "editor": null
+        },
+        "name": "checkOpenEndAnsweredWithoutLoop"
+      },
+      "addbc8dc-01b5-4970-bef9-4da7254eb4dc": {
+        "data": {
+          "id": "addbc8dc-01b5-4970-bef9-4da7254eb4dc",
+          "data": {
+            "function": "function fetchOpenEnd(questionCode, optionCode) {\n    const getAnswer = this.S.getData(questionCode);\n    const keys = Object.keys(getAnswer);\n    let key = questionCode;\n    if (optionCode) key = `${questionCode}#${optionCode}`;\n    return keys.indexOf(key) !== -1 ? getAnswer[key] : '';\n}",
+            "arguments": [
+              {
+                "name": "questionCode",
+                "type": "string",
+                "instruction": "The code of the target question"
+              },
+              {
+                "name": "optionCode",
+                "type": "string",
+                "instruction": "The code of the target option(multi-option only)"
+              }
+            ],
+            "return": {
+              "type": "string",
+              "instruction": "return the answer of the question or option"
+            },
+            "information": "",
+            "link": "0.0.1"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "fetchOpenEnd"
+          },
+          "editor": null
+        },
+        "name": "fetchOpenEnd"
+      },
+      "cc3528af-1192-4b71-97f7-a11037c70563": {
+        "data": {
+          "id": "cc3528af-1192-4b71-97f7-a11037c70563",
+          "data": {
+            "function": "/**\n * check answers in the data collection is not same as the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @param {Array<string>} loopItems loopItems\n * @returns true/false\n */\nfunction findAnswersIsNotWithLoop(setQuestion, setAnswer, loopItems) {\n    // get answers in the data collection with loopItems\n    const getAnswer = this.S.getData(`${setQuestion}_${loopItems.join('_')}`);\n    if (!getAnswer) return false;\n\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // get all option codes in the question and remove additional open-end\n    const getKeys = Object.keys(getAnswer).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // lengths should be same\n    if (setKeys.length !== getKeys.length) return false;\n    // all answers should be exactly not same\n    setKeys.forEach((key) => {\n        if (setAnswer[key] !== getAnswer[key]) {\n            // one of the answer is same then set flag to false\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "setQuestion",
+                "type": "string",
+                "instruction": "targe question"
+              },
+              {
+                "name": "setAnswer",
+                "type": "object",
+                "instruction": "set answers"
+              },
+              {
+                "name": "loopItems",
+                "type": "object",
+                "instruction": "loopItems"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+            },
+            "information": "check answers in the data collection is not same as the set answers",
+            "link": "0.0.3"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "findAnswersIsNotWithLoop"
+          },
+          "editor": null
+        },
+        "name": "findAnswersIsNotWithLoop"
+      },
+      "d35402a2-3441-4b65-9901-d794b80bddd2": {
+        "data": {
+          "id": "d35402a2-3441-4b65-9901-d794b80bddd2",
+          "data": {
+            "function": "/**\n * check answers in the data collection contains the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @param {Array<string>} loopItems loopItems\n * @returns true/false\n */\nfunction findAnswersContainsWithLoop(setQuestion, setAnswer, loopItems) {\n    // get answers in the data collection with loopItems\n    const getAnswer = this.S.getData(`${setQuestion}_${loopItems.join('_')}`);\n    if (!getAnswer) return false;\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // set return flag\n    var flag = true;\n    // all set answers should be same as the answer in the data collection\n    setKeys\n        .filter((key) => {\n            if (setAnswer[key] == '1') return key;\n        })\n        .forEach((key) => {\n            if (setAnswer[key] !== getAnswer[key]) {\n                flag = false;\n            }\n        });\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "setQuestion",
+                "type": "string",
+                "instruction": "targe question"
+              },
+              {
+                "name": "setAnswer",
+                "type": "object",
+                "instruction": "set answers"
+              },
+              {
+                "name": "loopItems",
+                "type": "object",
+                "instruction": "loopItems"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+            },
+            "information": "check answers in the data collection contains the set answers",
+            "link": "0.0.4"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "findAnswersContainsWithLoop"
+          },
+          "editor": null
+        },
+        "name": "findAnswersContainsWithLoop"
+      },
+      "e0062f7f-62bc-4676-9387-58b1f553c1fa": {
+        "data": {
+          "id": "e0062f7f-62bc-4676-9387-58b1f553c1fa",
+          "data": {
+            "function": "function randomize(options) {\n    var index = -1,\n        size = options.length,\n        lastIndex = size - 1;\n    while (++index < size) {\n        var rand = index + Math.floor(Math.random() * (lastIndex - index + 1));\n        var value = options[rand];\n        options[rand] = options[index];\n        options[index] = value;\n    }\n    options.length = size;\n    return options;\n}\n",
+            "arguments": [
+              {
+                "name": "options",
+                "type": "customized object",
+                "instruction": "the codes of options need to be randomized "
+              }
+            ],
+            "return": {
+              "type": "customized object",
+              "instruction": "new array after being randomized"
+            },
+            "information": "",
+            "link": "0.0.3"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "randomize"
+          },
+          "editor": null
+        },
+        "name": "randomize"
+      },
+      "e1f58326-04be-4744-bafe-869e019c5cac": {
+        "data": {
+          "id": "e1f58326-04be-4744-bafe-869e019c5cac",
+          "data": {
+            "function": "function fetchOpenEnd(questionCode, openEndCode) {\n    const getAnswer = this.S.getData(questionCode);\n    const keys = Object.keys(getAnswer);\n    let key = questionCode;\n    if (optionCode) key = `${questionCode}@${openEndCode}`;\n    return keys.indexOf(key) !== -1 ? getAnswer[key] : '';\n}",
+            "arguments": [
+              {
+                "name": "questionCode",
+                "type": "string",
+                "instruction": "The code of the target question"
+              },
+              {
+                "name": "openEndCode",
+                "type": "string",
+                "instruction": "The code of the target open-end option"
+              }
+            ],
+            "return": {
+              "type": "string",
+              "instruction": "return the answer of the open-end option of a question node"
+            },
+            "information": "",
+            "link": "0.0.1"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "fetchOpenEndInOptions"
+          },
+          "editor": null
+        },
+        "name": "fetchOpenEndInOptions"
+      },
+      "efdf60ea-e086-45ca-9acf-123d29506c1d": {
+        "data": {
+          "id": "efdf60ea-e086-45ca-9acf-123d29506c1d",
+          "data": {
+            "function": "function scriptLogic(script_id, args, return_type, operator, result) {\n    if (typeof (result) === \"string\" && return_type !== \"string\") {\n        switch (return_type) {\n            case \"boolean\":\n                if (result === \"true\") {\n                    result = true\n                }\n                else if (result === \"false\") {\n                    result = false;\n                }\n                else {\n                    throw new Error(`Cannot convert \"${result}\" to a Boolean`);\n                }\n                break;\n            case \"number\":\n                result = Number(result);\n                break;\n            default:\n                throw new Error(`Invalid return_type: ${return_type}`);\n        }\n    }\n    const getResult = this.S.execScriptItem(script_id, args);\n    switch (operator) {\n        // Allows two booleans or strings to compare size\n        case \">\":\n            return getResult > result;\n        // Allows two booleans or strings to compare size\n        case \"<\":\n            return getResult < result;\n        case \"=\": case \"is\":\n            return getResult === result;\n        case \"is not\":\n            return getResult !== result;\n        default:\n            throw new Error(`Unsupported operator: \"${operator}\"`)\n    }\n}\n",
+            "arguments": [
+              {
+                "name": "script_id",
+                "type": "string",
+                "instruction": "The script item id"
+              },
+              {
+                "name": "args",
+                "type": "customized object",
+                "instruction": "The args of the script"
+              },
+              {
+                "name": "return_type",
+                "type": "string",
+                "instruction": "The return type of chosen script('string'/'number'/'boolean')"
+              },
+              {
+                "name": "operator",
+                "type": "string",
+                "instruction": "The operator of current logic, 'is'/'is not' in string return type, '>', '=', '<' in boolean return type, 'is' in boolean type"
+              },
+              {
+                "name": "result",
+                "type": "string",
+                "instruction": "The supposed result in this logic input by user"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "the execution result of this script. true means the logic is satisfied otherwise false"
+            },
+            "information": "",
+            "link": "0.0.3"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "scriptLogic"
+          },
+          "editor": null
+        },
+        "name": "scriptLogic"
+      },
+      "f3f0b396-d833-4d74-a636-b69b5e46426d": {
+        "data": {
+          "id": "f3f0b396-d833-4d74-a636-b69b5e46426d",
+          "data": {
+            "function": "/**\n * check answers in the data collection is same as the set answers\n * @param {string} setQuestion target question\n * @param {object} setAnswer set answers\n * @returns true/false\n */\nfunction findAnswersIsWithoutLoop(setQuestion, setAnswer) {\n    // get answers in the data collection\n    const getAnswer = this.S.getData(setQuestion);\n    if (!getAnswer) return false;\n\n    // get target option codes\n    const setKeys = Object.keys(setAnswer);\n    // get all option codes in the question and remove additional open-end\n    const getKeys = Object.keys(getAnswer).filter((key) => {\n        if (key.indexOf('@') === -1) {\n            return key;\n        }\n    });\n    // set return flag\n    var flag = true;\n    // lengths should be same\n    if (setKeys.length !== getKeys.length) return false;\n    // all answers should be exactly same\n    setKeys.forEach((key) => {\n        if (setAnswer[key] !== getAnswer[key]) {\n            // one of the answer is not same then set flag to false\n            flag = false;\n        }\n    });\n    // return result\n    return flag;\n}",
+            "arguments": [
+              {
+                "name": "setQuestion",
+                "type": "string",
+                "instruction": "targe question"
+              },
+              {
+                "name": "setAnswer",
+                "type": "object",
+                "instruction": "set answers"
+              }
+            ],
+            "return": {
+              "type": "boolean",
+              "instruction": "if the answers are satisfied, the return will be true, otherwise false"
+            },
+            "information": "check answers in the data collection is same as the set answers",
+            "link": "0.0.2"
+          },
+          "kind": "BuiltinScriptItem",
+          "meta": {
+            "name": "findAnswersIsWithoutLoop"
+          },
+          "editor": null
+        },
+        "name": "findAnswersIsWithoutLoop"
+      }
+    },
+    "pluginInfo": {
+      "clickBox_2D_single_gameStyle": [
+        {
+          "version": "0.0.0-4",
+          "previewKey": "rx9jnytfkxph0w7pj",
+          "type": ""
+        }
+      ]
+    }
+  },
+  "editor": {
+    "task": "7695231e-7200-4fb8-8123-1ed9a753f075",
+    "comment": "23a34015-10f6-4d00-a231-c440b06d08c2"
+  }
+}

@@ -15,6 +15,8 @@ const optionItemSchema = {
         task: { type: 'string' },
         instruction: htmlElementSchema,
       },
+      required: ['comment', 'task', 'instruction'],
+      additionalProperties: false,
     },
     data: {
       type: 'object',
@@ -28,8 +30,12 @@ const optionItemSchema = {
           },
         },
       },
+      required: ['code', 'text'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'data'],
+  additionalProperties: false,
 };
 
 module.exports = { optionItemSchema };

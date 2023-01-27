@@ -14,14 +14,20 @@ const htmlElementSchema = {
         comment: { type: 'string' },
         task: { type: 'string' },
       },
+      required: ['comment', 'task'],
+      additionalProperties: false,
     },
     data: {
       type: 'object',
       properties: {
         html: { type: 'string' },
       },
+      required: ['html'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'data'],
+  additionalProperties: false,
 };
 
 module.exports = { htmlElementSchema };

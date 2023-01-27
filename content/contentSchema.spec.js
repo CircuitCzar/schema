@@ -30,9 +30,9 @@ test('QuestionContent 正确测试1', () => {
   expect(v.validate(instance3, questionContentSchema).errors.length).toBe(0);
 });
 
-// test('BlockContent 正确测试1', () => {
-//   expect(v.validate(instance4, getBlockContentSchema()).errors.length).toBe(0);
-// });
+test('BlockContent 正确测试1', () => {
+  expect(v.validate(instance4, getBlockContentSchema()).errors.length).toBe(0);
+});
 
 test('ExecutionContent 正确测试1', () => {
   expect(v.validate(instance5, executionContentSchema).errors.length).toBe(0);
@@ -53,3 +53,5 @@ test('MarkContent 正确测试1', () => {
 test('QuotaContent 正确测试1', () => {
   expect(v.validate(instance9, quotaContentSchema).errors.length).toBe(0);
 });
+
+// console.log(v.validate(instance3, questionContentSchema));

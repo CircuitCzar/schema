@@ -1,24 +1,6 @@
 const textListSchema = require('../list/listSchema').textListSchema;
 const optionListSchema = require('../list/listSchema').optionListSchema;
 
-/**
- * blockNodeSchema,
-  loopNodeSchema,
-  executionNodeSchema,
-  markNodeSchema,
-  quotaNodeSchema,
-  displayNodeSchema,
-  exitNodeSchema,
- */
-const questionNodeSchema = require('../node/nodeSchema').questionNodeSchema;
-const getBlockNodeSchema = require('../node/nodeSchema').getBlockNodeSchema;
-const getLoopNodeSchema = require('../node/nodeSchema').getLoopNodeSchema;
-const executionNodeSchema = require('../node/nodeSchema').executionNodeSchema;
-const markNodeSchema = require('../node/nodeSchema').markNodeSchema;
-const quotaNodeSchema = require('../node/nodeSchema').quotaNodeSchema;
-const displayNodeSchema = require('../node/nodeSchema').displayNodeSchema;
-const exitNodeSchema = require('../node/nodeSchema').exitNodeSchema;
-
 const randomizedSchema = {
   type: 'array',
   items: {
@@ -84,8 +66,12 @@ const questionContentSchema = {
           properties: {
             oe: { type: 'object' },
           },
+          required: ['oe'],
+          additionalProperties: false,
         },
       },
+      required: ['randomized', 'grouped', 'extraData'],
+      additionalProperties: false,
     },
     editor: { type: 'null' },
     content: {
@@ -98,9 +84,14 @@ const questionContentSchema = {
           type: 'array',
           item: { type: 'array' },
         },
+        optionsDisplay: { type: 'object' },
       },
+      required: ['type', 'options', 'optionsDisplay'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'content'],
+  additionalProperties: false,
 };
 
 // block content
@@ -128,8 +119,12 @@ const getBlockContentSchema = function (type = 'null') {
             },
           },
         },
+        required: ['type', 'list'],
+        additionalProperties: false,
       },
     },
+    required: ['id', 'kind', 'meta', 'editor', 'content'],
+    additionalProperties: false,
   };
   if (type === 'block') {
     blockContentSchema.properties.content.properties.list.items = {
@@ -205,8 +200,12 @@ const executionContentSchema = {
           },
         },
       },
+      required: ['type', 'executions'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'content'],
+  additionalProperties: false,
 };
 
 /**
@@ -232,8 +231,12 @@ const getLoopContentSchema = function (type = 'null') {
           list: { type: 'array' },
           loopItemDisplay: { type: 'object' },
         },
+        required: ['type', 'options', 'logics', 'list', 'loopItemDisplay'],
+        additionalProperties: false,
       },
     },
+    required: ['id', 'kind', 'meta', 'editor', 'content'],
+    additionalProperties: false,
   };
 
   if (type === 'block') {
@@ -301,8 +304,12 @@ const markContentSchema = {
         markers: { type: 'array' },
         logics: { type: 'array' },
       },
+      required: ['type', 'markers', 'logics'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'content'],
+  additionalProperties: false,
 };
 
 // quota content
@@ -322,8 +329,12 @@ const quotaContentSchema = {
         logics: { type: 'array' },
         quotas: { type: 'object' },
       },
+      required: ['type', 'markers', 'logics', 'quotas'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'content'],
+  additionalProperties: false,
 };
 
 // text content
@@ -341,6 +352,8 @@ const textContentSchema = {
       properties: {
         comment: { type: 'string' },
       },
+      required: ['comment'],
+      additionalProperties: false,
     },
     content: {
       type: 'object',
@@ -349,8 +362,12 @@ const textContentSchema = {
         lan: { type: 'string' },
         list: { type: 'object', item: textListSchema },
       },
+      required: ['type', 'lan', 'list'],
+      additionalProperties: false,
     },
   },
+  required: ['id', 'kind', 'meta', 'editor', 'content'],
+  additionalProperties: false,
 };
 
 module.exports = {

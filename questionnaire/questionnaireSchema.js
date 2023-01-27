@@ -14,7 +14,6 @@ const {
   lanSchema,
   builtinScriptSchema,
   pluginInfoSchema,
-  reusableListSchema,
 } = require('../meta/metaSchema');
 const { optionListSchema } = require('../list/listSchema');
 
@@ -62,9 +61,23 @@ const questionnaireSchema = {
           enum: ['ZH-CN', 'EN-US'],
         },
         pluginInfo: pluginInfoSchema,
-        optionLists: optionListSchema,
+        optionLists: {
+          oneOf: [
+            optionListSchema,
+            { type: 'object', additionalProperties: false },
+          ],
+        },
         builtin_scripts: builtinScriptSchema,
       },
+      required: [
+        'lan',
+        'scripts',
+        'defaultLan',
+        'pluginInfo',
+        'optionLists',
+        'builtin_scripts',
+      ],
+      additionalProperties: false,
     },
     editor: {
       type: 'object',
@@ -72,8 +85,20 @@ const questionnaireSchema = {
         task: { type: 'string', format: 'uuid' },
         comment: { type: 'string', format: 'uuid' },
       },
+      required: ['task', 'comment'],
+      additionalProperties: false,
     },
   },
+  required: [
+    'id',
+    'kind',
+    'survey_name',
+    'survey_note',
+    'list',
+    'meta',
+    'editor',
+  ],
+  additionalProperties: false,
 };
 
 module.exports = {
