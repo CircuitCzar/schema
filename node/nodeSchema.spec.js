@@ -8,6 +8,7 @@ const instance5 = require('./config/c_5.json');
 const instance6 = require('./config/c_6.json');
 const instance7 = require('./config/c_7.json');
 const instance8 = require('./config/c_8.json');
+const instance9 = require('./config/c_9.json');
 const questionNodeSchema = require('./nodeSchema').questionNodeSchema;
 const getBlockNodeSchema = require('./nodeSchema').getBlockNodeSchema;
 const getLoopNodeSchema = require('./nodeSchema').getLoopNodeSchema;
@@ -19,6 +20,10 @@ const exitNodeSchema = require('./nodeSchema').exitNodeSchema;
 
 test('QuestionNode 正确测试1', () => {
   expect(v.validate(instance1, questionNodeSchema).errors.length).toBe(0);
+});
+
+test('QuestionNode 正确测试2', () => {
+  expect(v.validate(instance9, questionNodeSchema).errors.length).toBe(0);
 });
 
 test('BlockNode 正确测试1', () => {
@@ -57,3 +62,5 @@ test('ExitNode 正确测试1', () => {
 //   blockNodeSchema.properties.structure.properties.content.$defs
 // );
 // console.log(v.validate(instance2, blockNodeSchema));
+
+// console.log(v.validate(instance9, questionNodeSchema));

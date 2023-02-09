@@ -82,7 +82,7 @@ const scriptSchema = {
 const lanSchema = {
   $schema: 'http://json-schema.org/draft-07/schema#',
   type: 'array',
-  item: {
+  items: {
     anyOf: [{ const: 'ZH-CN' }, { const: 'EN-US' }],
   },
   uniqueItems: true,

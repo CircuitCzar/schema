@@ -1527,6 +1527,86 @@
         "name": "dfsdfdsf"
       }
     },
+    "pluginInfo": {
+      "build2": {
+        "version": "0.0.0-4",
+        "previewKey": "r8yy8tmx5bjkkg6vj"
+      },
+      "andytestplg": {
+        "version": "0.0.0-0",
+        "previewKey": "rt1r5jcc2rzkdvvfr"
+      },
+      "speechToText_2D": [
+        {
+          "type": "",
+          "version": "0.0.0-9",
+          "previewKey": "rmsb40g5f613fb6xx"
+        }
+      ],
+      "speedToText_one": {
+        "version": "0.0.0-19",
+        "previewKey": "rc7fz58e6cq4rm96s"
+      },
+      "drag_and_drop_bucket": {
+        "version": "0.1.1-42",
+        "previewKey": "rjdggfns1z4w0qfds"
+      },
+      "drag_one_Single_game": {
+        "version": "0.0.0-1",
+        "previewKey": "r6v5ef6e58wrvqqvw"
+      },
+      "drag_one_Single_game2": {
+        "version": "0.0.0-1",
+        "previewKey": "r18rz4s4jbks9txd9"
+      },
+      "drag_one_Single_tech2": {
+        "version": "0.0.0-0",
+        "previewKey": "rnzhsnzhyqxtbvdjk"
+      },
+      "drag_two_Single_tech2": {
+        "version": "0.0.0-0",
+        "previewKey": "r9gykskcmcv9vn2ch"
+      },
+      "drag_n_drop_categorizing": {
+        "version": "1.0.0",
+        "previewKey": "rs5kvwkrazs148nmjn9v3qjky85m4srnd"
+      },
+      "numeric_1D_medical_slider": {
+        "version": "0.0.0-2",
+        "previewKey": "r56ssez51asjc0q0v"
+      },
+      "numeric_slider_2D_healthy": [
+        {
+          "type": "",
+          "version": "0.0.0-0",
+          "previewKey": "r67qy9yxkf9cqxy8c"
+        }
+      ],
+      "drag_and_drop_Ranking_tech1": {
+        "version": "0.0.0-16",
+        "previewKey": "r3x5kgmnr7s8yk7nk"
+      },
+      "numbericSlider_1D_gameStyle": {
+        "version": "0.0.0-6",
+        "previewKey": "r75kzwfnh968gy92k"
+      },
+      "numbericSlider_1D_techStyle": {
+        "version": "0.0.0-1",
+        "previewKey": "r9m21qzvtmv82atbd"
+      },
+      "clickBox_2D_single_techStyle": {
+        "version": "0.0.0-2",
+        "previewKey": "r15t6kgzq0e13njmb"
+      },
+      "clickBox_2D_single_chinaStyle": {
+        "version": "0.0.0-6",
+        "previewKey": "r5sg9akpd7bn3894y"
+      },
+      "Digital_invitation_confirmation_letter": {
+        "version": "0.0.0-14",
+        "previewKey": "rp6km4n9d7zgpr3xc"
+      }
+    },
     "defaultLan": "ZH-CN",
     "optionLists": {
       "94804129-b6a2-49aa-8702-1a8f38f29622": {

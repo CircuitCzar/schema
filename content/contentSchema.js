@@ -59,6 +59,14 @@ const questionContentSchema = {
     meta: {
       type: 'object',
       properties: {
+        dropDown: {
+          type: 'array',
+          items: {
+            active: {
+              type: 'boolean',
+            },
+          },
+        },
         randomized: randomizedSchema,
         grouped: groupedSchema,
         extraData: {
@@ -82,7 +90,7 @@ const questionContentSchema = {
         },
         options: {
           type: 'array',
-          item: { type: 'array' },
+          items: { type: 'array' },
         },
         optionsDisplay: { type: 'object' },
       },
@@ -191,7 +199,7 @@ const executionContentSchema = {
         type: { const: 'Execution' },
         executions: {
           type: 'array',
-          item: {
+          items: {
             type: 'object',
             properties: {
               id: { type: 'string', format: 'uuid' },
