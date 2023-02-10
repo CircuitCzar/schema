@@ -32,7 +32,7 @@ const questionNodeSchema = {
     structure: {
       type: 'object',
       properties: {
-        type: { const: 'required' },
+        type: { enum: ['required', 'optional'] },
         code: { type: 'string' },
         content: questionContentSchema,
         text: {

@@ -1,0 +1,1320 @@
+{
+  "id": "b7ec8a47-d155-4968-a49c-2615115fa9f3",
+  "kind": "QuestionNode",
+  "meta": {
+    "node_label": ""
+  },
+  "editor": {
+    "task": "",
+    "comment": "",
+    "instruction": {
+      "id": "f37022bf-5a48-4e2d-916c-ca5fe440a8e3",
+      "data": {
+        "html": ""
+      },
+      "kind": "HtmlItem",
+      "meta": null,
+      "editor": {
+        "task": "",
+        "comment": ""
+      }
+    }
+  },
+  "structure": {
+    "code": "瓶箱大表格",
+    "text": {
+      "ZH-CN": {
+        "id": "cdc8d880-c27e-453e-8690-5d678ff1907c",
+        "kind": "TextContent",
+        "meta": null,
+        "editor": {
+          "comment": ""
+        },
+        "content": {
+          "lan": "zh-cn",
+          "list": {
+            "id": "7219cf4d-e6fe-4b2e-84bd-4686a36599fa",
+            "kind": "TextList",
+            "list": [
+              {
+                "id": "884cdfdd-01d5-4194-8acb-351cdf8f1a73",
+                "data": {
+                  "html": "<div style=\"display: inline-block\">"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "bebd3f6c-944c-4387-ba0c-2394669ba62c",
+                "data": {
+                  "html": "<div>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "0edea723-a0b4-4feb-8706-33cc40fe5556",
+                "data": {
+                  "html": "<span>请完成一下表格内容填写</span>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "7d0251a8-b464-4546-a731-64b083cc6e62",
+                "data": {
+                  "html": "</div>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              },
+              {
+                "id": "bad4af85-1bd6-4eba-9079-050f19b3c8da",
+                "data": {
+                  "html": "</div>"
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              }
+            ],
+            "meta": null,
+            "editor": {
+              "task": "",
+              "comment": ""
+            }
+          },
+          "type": "String"
+        }
+      }
+    },
+    "type": "optional",
+    "content": {
+      "id": "fa135c08-99fa-4527-aac6-173cc7482905",
+      "kind": "QuestionContent",
+      "meta": {
+        "grouped": [
+          {
+            "active": false,
+            "members": {
+              "50749b85-b604-4888-b326-4d7f82aa61bd": {
+                "id": "50749b85-b604-4888-b326-4d7f82aa61bd",
+                "code": "50749b85-b604-4888-b326-4d7f82aa61bd",
+                "order": {
+                  "script": "",
+                  "predefined": [],
+                  "recordedFormat": ""
+                },
+                "title": {
+                  "text": "作业区域",
+                  "script": null
+                },
+                "options": {},
+                "groupColor": "#3c4bdf"
+              }
+            },
+            "randomized": {
+              "type": "auto",
+              "order": {
+                "script": "",
+                "predefined": ["50749b85-b604-4888-b326-4d7f82aa61bd"],
+                "recordedFormat": ""
+              },
+              "active": false,
+              "options": {},
+              "fixedPositionFor": {}
+            }
+          },
+          {
+            "active": false,
+            "members": {},
+            "randomized": {
+              "type": "auto",
+              "order": {
+                "script": "",
+                "predefined": [],
+                "recordedFormat": ""
+              },
+              "active": false,
+              "options": {},
+              "fixedPositionFor": {}
+            }
+          }
+        ],
+        "extraData": {
+          "oe": {}
+        },
+        "randomized": [
+          {
+            "type": "auto",
+            "order": {
+              "script": "",
+              "predefined": [],
+              "recordedFormat": ""
+            },
+            "active": false,
+            "options": {},
+            "fixedPositionFor": {}
+          },
+          {
+            "type": "auto",
+            "order": {
+              "script": "",
+              "predefined": [],
+              "recordedFormat": ""
+            },
+            "active": false,
+            "options": {},
+            "fixedPositionFor": {}
+          }
+        ]
+      },
+      "editor": null,
+      "content": {
+        "type": "Numeric",
+        "options": [
+          [
+            {
+              "0": {
+                "code": "0"
+              },
+              "id": "36e195b4-768f-449a-97a4-bff36f181bf2",
+              "data": {
+                "code": "0",
+                "text": {
+                  "ZH-CN": {
+                    "id": "7f7a4ece-e217-4b46-9d1f-448cbaae1eb6",
+                    "kind": "TextContent",
+                    "meta": null,
+                    "editor": {
+                      "comment": ""
+                    },
+                    "content": {
+                      "lan": "ZH-CN",
+                      "list": {
+                        "id": "5075e6a5-b4c6-4354-9d0e-766e8732f61f",
+                        "kind": "TextList",
+                        "list": [
+                          {
+                            "id": "8e305077-46e3-4587-938c-78f2ce173dd1",
+                            "data": {
+                              "html": "<div style=\"display: inline-block\">"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "3a194244-bac5-40db-947f-8306f83635b4",
+                            "data": {
+                              "html": "<div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "6131ae2e-63f0-4035-a4aa-c84589dfc9e1",
+                            "data": {
+                              "html": "<span>包装上线</span>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "9b7652ed-9af1-444f-8639-481da2c9ccb2",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "3e8bee39-e8ac-4f83-b900-2c0909fae044",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        ],
+                        "meta": null,
+                        "editor": {
+                          "task": "",
+                          "comment": ""
+                        }
+                      },
+                      "type": "String"
+                    }
+                  }
+                }
+              },
+              "kind": "OptionItem",
+              "meta": null,
+              "editor": {
+                "task": "",
+                "comment": "",
+                "instruction": {
+                  "id": "79ccedc1-aee7-4a4b-91ad-4e9527365eb0",
+                  "data": {
+                    "html": ""
+                  },
+                  "kind": "HtmlItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": ""
+                  }
+                }
+              }
+            },
+            {
+              "1": {
+                "code": "1"
+              },
+              "id": "a3223da8-45d2-4872-939e-d63197f2f008",
+              "data": {
+                "code": "1",
+                "text": {
+                  "ZH-CN": {
+                    "id": "25d3f6d9-93de-4f50-9635-01ed46757939",
+                    "kind": "TextContent",
+                    "meta": null,
+                    "editor": {
+                      "comment": ""
+                    },
+                    "content": {
+                      "lan": "ZH-CN",
+                      "list": {
+                        "id": "f643346c-4e49-49c4-bd45-fb9e89f46d87",
+                        "kind": "TextList",
+                        "list": [
+                          {
+                            "id": "098cef57-14ea-40a6-9f46-de450b7db2c1",
+                            "data": {
+                              "html": "<div style=\"display: inline-block\">"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "df54f58d-218a-465f-b652-b2b144e8a6ea",
+                            "data": {
+                              "html": "<div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "c12be8ac-7a0d-4a4b-951c-3f3746efa6c9",
+                            "data": {
+                              "html": "<span>割箱线上下线</span>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "4f2a0222-eca6-451d-b805-70529bbddfe8",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "2382ae4f-27be-4fef-90e0-690144b4da8d",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        ],
+                        "meta": null,
+                        "editor": {
+                          "task": "",
+                          "comment": ""
+                        }
+                      },
+                      "type": "String"
+                    }
+                  }
+                }
+              },
+              "kind": "OptionItem",
+              "meta": null,
+              "editor": {
+                "task": "",
+                "comment": "",
+                "instruction": {
+                  "id": "5cd532b9-4c34-4e67-a841-23a55afe2a57",
+                  "data": {
+                    "html": ""
+                  },
+                  "kind": "HtmlItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": ""
+                  }
+                }
+              }
+            },
+            {
+              "2": {
+                "code": "2"
+              },
+              "id": "b9e114fa-c0d3-4882-942d-f36ca588b4f9",
+              "data": {
+                "code": "2",
+                "text": {
+                  "ZH-CN": {
+                    "id": "992db5eb-48a0-4491-82bb-4694e59aa5b6",
+                    "kind": "TextContent",
+                    "meta": null,
+                    "editor": {
+                      "comment": ""
+                    },
+                    "content": {
+                      "lan": "ZH-CN",
+                      "list": {
+                        "id": "30b5a705-2a27-4396-afdd-05355e33aa48",
+                        "kind": "TextList",
+                        "list": [
+                          {
+                            "id": "b5b502dc-12da-462e-926f-f87470aa43b2",
+                            "data": {
+                              "html": "<div style=\"display: inline-block\">"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "e59f17a8-641e-47ec-8b7b-c4fefbd12813",
+                            "data": {
+                              "html": "<div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "a84e4f76-e82a-4132-a1d5-c92b3075bd24",
+                            "data": {
+                              "html": "<span>卸瓶</span>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "82f15eaa-e596-4755-af76-2db68a8aed86",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "7aa53d0a-82de-4117-87df-b5531bed86c8",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        ],
+                        "meta": null,
+                        "editor": {
+                          "task": "",
+                          "comment": ""
+                        }
+                      },
+                      "type": "String"
+                    }
+                  }
+                }
+              },
+              "kind": "OptionItem",
+              "meta": null,
+              "editor": {
+                "task": "",
+                "comment": "",
+                "instruction": {
+                  "id": "2fd736e3-9aed-4a73-8f98-69ebc85afc45",
+                  "data": {
+                    "html": ""
+                  },
+                  "kind": "HtmlItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": ""
+                  }
+                }
+              }
+            },
+            {
+              "3": {
+                "code": "3"
+              },
+              "id": "07eeb67d-96db-4f27-bfd8-d962f5009d31",
+              "data": {
+                "code": "3",
+                "text": {
+                  "ZH-CN": {
+                    "id": "0619e7fa-d044-40e3-b234-1330a4015f59",
+                    "kind": "TextContent",
+                    "meta": null,
+                    "editor": {
+                      "comment": ""
+                    },
+                    "content": {
+                      "lan": "ZH-CN",
+                      "list": {
+                        "id": "6253158c-5390-4544-b5ee-5c88d0c63016",
+                        "kind": "TextList",
+                        "list": [
+                          {
+                            "id": "eb677ef7-c72e-4669-b498-02ff6006d95f",
+                            "data": {
+                              "html": "<div style=\"display: inline-block\">"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "a8b4d623-db85-4b98-b978-90998f5a1c38",
+                            "data": {
+                              "html": "<div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "3d477c99-b896-4029-9cdb-abdcab48adb0",
+                            "data": {
+                              "html": "<span>新员工培训</span>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "01eae8de-fc7f-4220-a611-b6cae7953fe4",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "b2a3c1ac-ae4e-447e-83cf-3f49c2dc94e3",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        ],
+                        "meta": null,
+                        "editor": {
+                          "task": "",
+                          "comment": ""
+                        }
+                      },
+                      "type": "String"
+                    }
+                  }
+                }
+              },
+              "kind": "OptionItem",
+              "meta": null,
+              "editor": {
+                "task": "",
+                "comment": "",
+                "instruction": {
+                  "id": "f503f194-5079-4f66-8a85-35cb7223df73",
+                  "data": {
+                    "html": ""
+                  },
+                  "kind": "HtmlItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": ""
+                  }
+                }
+              }
+            },
+            {
+              "4": {
+                "code": "4"
+              },
+              "id": "dffbb9d5-1c2e-4445-9e6c-b345b100dd1f",
+              "data": {
+                "code": "4",
+                "text": {
+                  "ZH-CN": {
+                    "id": "6ce54b58-9562-4bf1-ae95-28f6107ce3cf",
+                    "kind": "TextContent",
+                    "meta": null,
+                    "editor": {
+                      "comment": ""
+                    },
+                    "content": {
+                      "lan": "ZH-CN",
+                      "list": {
+                        "id": "cdd51773-f2bc-4bcc-b567-87e041745633",
+                        "kind": "TextList",
+                        "list": [
+                          {
+                            "id": "9404db9f-adc7-42a9-b329-13e791a6aeb1",
+                            "data": {
+                              "html": "<div style=\"display: inline-block\">"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "2d101dff-662c-4e93-b28c-71f3afaa69d0",
+                            "data": {
+                              "html": "<div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "ac2d641c-2cd1-4592-ba33-936a4832baf0",
+                            "data": {
+                              "html": "<span>瓶箱其他</span>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "9522d65a-cf75-4228-9e5b-af4e37715217",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "27c332de-3373-4f5b-a877-1b1ca1ee9c04",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        ],
+                        "meta": null,
+                        "editor": {
+                          "task": "",
+                          "comment": ""
+                        }
+                      },
+                      "type": "String"
+                    }
+                  }
+                }
+              },
+              "kind": "OptionItem",
+              "meta": null,
+              "editor": {
+                "task": "",
+                "comment": "",
+                "instruction": {
+                  "id": "f66a6e54-9eac-4abe-b247-7315ad5610a6",
+                  "data": {
+                    "html": ""
+                  },
+                  "kind": "HtmlItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": ""
+                  }
+                }
+              }
+            }
+          ],
+          [
+            {
+              "id": "3a6bda49-e4a1-4a57-97be-d0d445563d75",
+              "data": {
+                "code": "0",
+                "text": {
+                  "ZH-CN": {
+                    "id": "39d16a50-c2b1-405e-ba9a-cd8b1632f4db",
+                    "kind": "TextContent",
+                    "meta": null,
+                    "editor": {
+                      "comment": ""
+                    },
+                    "content": {
+                      "lan": "ZH-CN",
+                      "list": {
+                        "id": "69f55dc0-0f43-4160-a2b5-1f4a12185600",
+                        "kind": "TextList",
+                        "list": [
+                          {
+                            "id": "2e1c1f55-1aaa-4948-9fd2-b70f7948c23c",
+                            "data": {
+                              "html": "<div style=\"display: inline-block\">"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "bbf61820-7007-497e-8ed1-53b310be9899",
+                            "data": {
+                              "html": "<div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "cd66ddbd-40f4-4262-8fe3-280a0aa853c2",
+                            "data": {
+                              "html": "<span>出勤人数</span>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "fe0527da-5182-4f5b-9c25-68b45b14eeea",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "604d535a-914c-42e7-a82a-6341535598da",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        ],
+                        "meta": null,
+                        "editor": {
+                          "task": "",
+                          "comment": ""
+                        }
+                      },
+                      "type": "String"
+                    }
+                  }
+                }
+              },
+              "kind": "OptionItem",
+              "meta": null,
+              "editor": {
+                "task": "",
+                "comment": "",
+                "instruction": {
+                  "id": "ab7384fd-0931-4048-ab2e-aad0546ecba7",
+                  "data": {
+                    "html": ""
+                  },
+                  "kind": "HtmlItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": ""
+                  }
+                }
+              }
+            },
+            {
+              "id": "85929f9b-d6bf-46fc-9758-4b7b6936101e",
+              "data": {
+                "code": "1",
+                "text": {
+                  "ZH-CN": {
+                    "id": "ab21f991-1128-406f-bc66-3dc9f582fa6d",
+                    "kind": "TextContent",
+                    "meta": null,
+                    "editor": {
+                      "comment": ""
+                    },
+                    "content": {
+                      "lan": "ZH-CN",
+                      "list": {
+                        "id": "cd7e6a1d-408f-443f-84af-2f91ee4eb4fc",
+                        "kind": "TextList",
+                        "list": [
+                          {
+                            "id": "3bfe12e0-c0e9-4ad8-a69f-8b027878d139",
+                            "data": {
+                              "html": "<div style=\"display: inline-block\">"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "3cb31e68-3464-4f98-bc11-0089bbe63508",
+                            "data": {
+                              "html": "<div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "d7051fc8-013e-4cd6-bf6e-bd71b81f8418",
+                            "data": {
+                              "html": "<span>叉车工出勤总工时</span>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "3a53f8be-0623-4c99-832f-102a71fe0813",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "94f2a2f7-314d-47d3-b9c3-4deccadb3b83",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        ],
+                        "meta": null,
+                        "editor": {
+                          "task": "",
+                          "comment": ""
+                        }
+                      },
+                      "type": "String"
+                    }
+                  }
+                }
+              },
+              "kind": "OptionItem",
+              "meta": null,
+              "editor": {
+                "task": "",
+                "comment": "",
+                "instruction": {
+                  "id": "c84d8bdf-011a-4afb-a11c-45924783cdbf",
+                  "data": {
+                    "html": ""
+                  },
+                  "kind": "HtmlItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": ""
+                  }
+                }
+              }
+            },
+            {
+              "id": "e8b9b552-05d3-4d94-9f5b-6d86dfd900cf",
+              "data": {
+                "code": "2",
+                "text": {
+                  "ZH-CN": {
+                    "id": "c69c6039-6291-441f-8b32-f150e5d33635",
+                    "kind": "TextContent",
+                    "meta": null,
+                    "editor": {
+                      "comment": ""
+                    },
+                    "content": {
+                      "lan": "ZH-CN",
+                      "list": {
+                        "id": "64dc76d7-241d-4397-b682-93decbaafb46",
+                        "kind": "TextList",
+                        "list": [
+                          {
+                            "id": "9359ba6e-d372-48f0-ad12-0a4fb6ea9c42",
+                            "data": {
+                              "html": "<div style=\"display: inline-block\">"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "06c76cdd-50e3-4631-a491-a79228c6e441",
+                            "data": {
+                              "html": "<div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "b95eaccc-9768-4eef-bf5b-9fd2b4aba908",
+                            "data": {
+                              "html": "<span>总量（板）</span>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "f4f7ed89-9fa4-4ff9-89b6-a428f2469945",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "13a7c7d8-fb5e-4c6e-90b2-0a67a8d8b279",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        ],
+                        "meta": null,
+                        "editor": {
+                          "task": "",
+                          "comment": ""
+                        }
+                      },
+                      "type": "String"
+                    }
+                  }
+                }
+              },
+              "kind": "OptionItem",
+              "meta": null,
+              "editor": {
+                "task": "",
+                "comment": "",
+                "instruction": {
+                  "id": "953b0b67-0189-46c2-a15e-8e8140637ba0",
+                  "data": {
+                    "html": ""
+                  },
+                  "kind": "HtmlItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": ""
+                  }
+                }
+              }
+            },
+            {
+              "id": "4d01009c-560f-4daf-8908-c504b0ac8fbb",
+              "data": {
+                "code": "3",
+                "text": {
+                  "ZH-CN": {
+                    "id": "24825322-f74d-4fe8-a32d-268f0269d1f3",
+                    "kind": "TextContent",
+                    "meta": null,
+                    "editor": {
+                      "comment": ""
+                    },
+                    "content": {
+                      "lan": "ZH-CN",
+                      "list": {
+                        "id": "8b13edff-5596-4ba4-bdc7-e6e6b53481d6",
+                        "kind": "TextList",
+                        "list": [
+                          {
+                            "id": "74550ea7-ae96-43f1-8433-6b858e8a317d",
+                            "data": {
+                              "html": "<div style=\"display: inline-block\">"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "777fbba8-d306-4416-ae9f-edbc5eb5a6ce",
+                            "data": {
+                              "html": "<div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "6720394b-87cd-4fd0-938a-8fcf65b6f96a",
+                            "data": {
+                              "html": "<span>备注</span>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "8b578777-e69a-4b3c-b4f2-5de4429a3ea1",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          },
+                          {
+                            "id": "b5b56b7b-e19e-4162-a524-31020a5a4ded",
+                            "data": {
+                              "html": "</div>"
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        ],
+                        "meta": null,
+                        "editor": {
+                          "task": "",
+                          "comment": ""
+                        }
+                      },
+                      "type": "String"
+                    }
+                  }
+                }
+              },
+              "kind": "OptionItem",
+              "meta": null,
+              "editor": {
+                "task": "",
+                "comment": "",
+                "instruction": {
+                  "id": "fea49db3-81ad-4028-879f-0c6578ef9b28",
+                  "data": {
+                    "html": ""
+                  },
+                  "kind": "HtmlItem",
+                  "meta": null,
+                  "editor": {
+                    "task": "",
+                    "comment": ""
+                  }
+                }
+              }
+            }
+          ]
+        ],
+        "optionsDisplay": {}
+      }
+    },
+    "condition": {
+      "true": {
+        "id": "93b2c040-7802-41d3-8ac9-858cfd218196",
+        "kind": "ConditionContent",
+        "meta": null,
+        "editor": null,
+        "content": {
+          "type": "IS",
+          "condition": [
+            {
+              "id": "7dbf9b23-0f61-415e-8bd3-50221e32573a",
+              "kind": "ConditionContent",
+              "meta": null,
+              "editor": null,
+              "content": {
+                "type": "IS",
+                "condition": [
+                  {
+                    "id": "b9ffac7d-f325-4dff-8e6a-5b6beaf042c8",
+                    "kind": "ConditionContent",
+                    "meta": null,
+                    "editor": null,
+                    "content": {
+                      "type": "AND",
+                      "condition": {
+                        "id": "af51fae0-916e-4cd8-a0d7-e0ef02e2c432",
+                        "kind": "ScriptContent",
+                        "meta": null,
+                        "editor": {
+                          "instruction": {
+                            "id": "0a8025e2-d3a2-4d5d-888b-c868d67dc5e4",
+                            "data": {
+                              "html": ""
+                            },
+                            "kind": "HtmlItem",
+                            "meta": null,
+                            "editor": {
+                              "task": "",
+                              "comment": ""
+                            }
+                          }
+                        },
+                        "content": {
+                          "type": "Condition",
+                          "execution": {
+                            "id": "d5956850-0e5a-4496-bc04-61699f776ce0",
+                            "return": {
+                              "value": ""
+                            },
+                            "arguments": {
+                              "setAnswer": {
+                                "value": {
+                                  "部门选择": "0"
+                                }
+                              },
+                              "setQuestion": {
+                                "value": "部门选择"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "false": null
+    },
+    "appearance": {
+      "plugin": {
+        "default": {
+          "lan": {
+            "en": null
+          },
+          "name": "",
+          "settings": null
+        }
+      }
+    },
+    "instruction": {
+      "ZH-CN": {
+        "id": "40228755-eb5a-47db-9fbe-255d5d3a599e",
+        "kind": "TextContent",
+        "meta": null,
+        "editor": {
+          "comment": ""
+        },
+        "content": {
+          "lan": "zh-cn",
+          "list": {
+            "id": "5b747fb6-1678-4e55-80ad-943e3c300b8a",
+            "kind": "TextList",
+            "list": [
+              {
+                "id": "cf9bf8ae-4682-459e-8fb2-067ac5203b4b",
+                "data": {
+                  "html": ""
+                },
+                "kind": "HtmlItem",
+                "meta": null,
+                "editor": {
+                  "task": "",
+                  "comment": ""
+                }
+              }
+            ],
+            "meta": null,
+            "editor": {
+              "task": "",
+              "comment": ""
+            }
+          },
+          "type": "String"
+        }
+      }
+    }
+  }
+}
